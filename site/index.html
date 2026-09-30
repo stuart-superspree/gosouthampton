@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<!--
+  Southampton RouteLoop, city centre stakeholder demo
+  Superspree · Loop. Version 2.0.0 (rebuild of the cruise prototype v1.0.5)
+  Static site, vanilla ES modules, no build step, no third-party calls.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#b3160f" />
+  <meta name="description" content="Southampton city centre by Loop. Tap a Loop, pick a trail, discover the city." />
+  <meta name="version" content="2.0.0" />
+  <title>Visit Southampton · RouteLoop (demo)</title>
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/img/icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/img/icons/icon-192.png" />
+  <link rel="preload" href="/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/styles/app.css" />
+  <!-- PRELOAD-START (written by scripts/sw-manifest.mjs) -->
+  <link rel="modulepreload" href="/src/api.js" />
+  <link rel="modulepreload" href="/src/bundle.js" />
+  <link rel="modulepreload" href="/src/clock.js" />
+  <link rel="modulepreload" href="/src/ctx.js" />
+  <link rel="modulepreload" href="/src/graph.js" />
+  <link rel="modulepreload" href="/src/hmac.js" />
+  <link rel="modulepreload" href="/src/i18n.js" />
+  <link rel="modulepreload" href="/src/import-job.js" />
+  <link rel="modulepreload" href="/src/importer.js" />
+  <link rel="modulepreload" href="/src/journey.js" />
+  <link rel="modulepreload" href="/src/markup.js" />
+  <link rel="modulepreload" href="/src/mini-html.js" />
+  <link rel="modulepreload" href="/src/mock-edge.js" />
+  <link rel="modulepreload" href="/src/mock-server.js" />
+  <link rel="modulepreload" href="/src/nudge.js" />
+  <link rel="modulepreload" href="/src/outbox.js" />
+  <link rel="modulepreload" href="/src/registers.js" />
+  <link rel="modulepreload" href="/src/router.js" />
+  <link rel="modulepreload" href="/src/session.js" />
+  <link rel="modulepreload" href="/src/state.js" />
+  <link rel="modulepreload" href="/src/storage.js" />
+  <link rel="modulepreload" href="/src/tap.js" />
+  <link rel="modulepreload" href="/src/time.js" />
+  <link rel="modulepreload" href="/src/ui/common.js" />
+  <link rel="modulepreload" href="/src/ui/events.js" />
+  <link rel="modulepreload" href="/src/ui/feedback.js" />
+  <link rel="modulepreload" href="/src/ui/help.js" />
+  <link rel="modulepreload" href="/src/ui/home.js" />
+  <link rel="modulepreload" href="/src/ui/passport.js" />
+  <link rel="modulepreload" href="/src/ui/return.js" />
+  <link rel="modulepreload" href="/src/ui/setup.js" />
+  <link rel="modulepreload" href="/src/ui/snow.js" />
+  <link rel="modulepreload" href="/src/ui/trail.js" />
+  <link rel="preload" href="/data/tags.json" as="fetch" crossorigin />
+  <link rel="preload" href="/data/legs.json" as="fetch" crossorigin />
+  <link rel="preload" href="/data/trails.json" as="fetch" crossorigin />
+  <link rel="preload" href="/data/campaigns.json" as="fetch" crossorigin />
+  <link rel="preload" href="/data/rewards.json" as="fetch" crossorigin />
+  <link rel="preload" href="/data/safe-places.json" as="fetch" crossorigin />
+  <link rel="preload" href="/data/notices.json" as="fetch" crossorigin />
+  <link rel="preload" href="/data/busy-calendar.json" as="fetch" crossorigin />
+  <link rel="preload" href="/data/settings.json" as="fetch" crossorigin />
+  <link rel="preload" href="/data/images.json" as="fetch" crossorigin />
+  <link rel="preload" href="/data/sources.json" as="fetch" crossorigin />
+  <link rel="preload" href="/data/manual-events.json" as="fetch" crossorigin />
+  <!-- PRELOAD-END -->
+  <script type="module" src="/src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
+  <div class="offline-banner hidden" id="offlineBanner" role="status"><span aria-hidden="true">●</span> <span data-i18n="offline.banner">Offline, guidance still works</span></div>
+  <div class="update-bar hidden" id="updateBar" role="status">
+    <span class="update-text"><strong data-i18n="update.ready">Update ready</strong> <span id="updateDetail"></span></span>
+    <button class="update-btn" data-action="apply-update" data-i18n="update.apply">Refresh</button>
+    <button class="update-later" data-action="dismiss-update" data-i18n="update.later">Later</button>
+  </div>
+  <div class="preview-bar hidden" id="previewBar" data-i18n="demo.preview">Preview of unpublished changes</div>
+
+  <main id="main" class="phone" tabindex="-1">
+
+    <section class="screen active" data-screen="welcome" data-i18n-aria="screen.welcome" aria-label="Welcome">
+      <div class="welcome-hero">
+        <div class="vs-logo"><span class="vs-name" data-i18n="brand.name">Visit Southampton</span><span class="vs-sub" data-brand-sub>Cruise Day Out</span></div>
+        <div class="flex-1"></div>
+        <p class="welcome-eyebrow" data-i18n="welcome.eyebrow">Welcome to our wonderful city</p>
+        <h1 class="welcome-title screen-focus" tabindex="-1" data-i18n="welcome.title">Southampton awaits.</h1>
+        <p class="welcome-sub" data-i18n="welcome.sub">Tap a Loop, pick a tour, and discover the city before your ship sails.</p>
+      </div>
+      <div class="welcome-cta-row">
+        <button class="btn btn-primary btn-arrow" data-action="go-language" data-i18n="welcome.start">Let's start</button>
+        <button class="btn btn-ghost" data-action="skip-to-home" data-i18n="welcome.skip">I've used this before. Skip setup</button>
+      </div>
+      <p class="welcome-tagline"><strong data-i18n="welcome.taglineStrong">No download needed.</strong> <span data-i18n="welcome.tagline">This is the app, running in your browser, ready to go.</span></p>
+      <div class="welcome-foot"><span data-i18n="poweredBy">Powered by</span> <strong>Superspree · Loop</strong> <span class="version-badge">v2.0 demo</span></div>
+    </section>
+
+    <section class="screen" data-screen="language" data-i18n-aria="lang.title" aria-label="Choose your language">
+      <div class="topbar">
+        <button class="icon-btn" data-i18n-aria="aria.back" aria-label="Back" data-action="back">←</button>
+        <div class="vs-logo"><span class="vs-name" data-i18n="brand.name">Visit Southampton</span><span class="vs-sub" data-brand-sub>Cruise Day Out</span></div>
+        <span class="topbar-spacer"></span>
+      </div>
+      <div class="screen-pad">
+        <p class="eyebrow" data-i18n="lang.eyebrow">Step 1 of 2</p>
+        <h1 class="h1 screen-focus" tabindex="-1" data-i18n="lang.title">Choose your language</h1>
+        <p class="lead" data-i18n="lang.sub">We've guessed from your phone. Change it any time from the globe icon.</p>
+        <div class="lang-grid" id="langGrid" role="group" data-i18n-aria="aria.language" aria-label="Language">
+          <button class="lang-card" data-lang="en" aria-pressed="false"><span class="lang-flag flag-en" aria-hidden="true"></span><span class="lang-meta"><span class="lang-name" lang="en">English</span><span class="lang-en" data-i18n="lang.sub.en">English</span></span></button>
+          <button class="lang-card" data-lang="de" aria-pressed="false"><span class="lang-flag flag-de" aria-hidden="true"></span><span class="lang-meta"><span class="lang-name" lang="de">Deutsch</span><span class="lang-en" data-i18n="lang.sub.de">German</span></span></button>
+          <button class="lang-card" data-lang="it" disabled><span class="lang-flag flag-it" aria-hidden="true"></span><span class="lang-meta"><span class="lang-name" lang="it">Italiano</span><span class="lang-en" data-i18n="lang.sub.it">Italian · v1.1</span></span></button>
+          <button class="lang-card" data-lang="nl" disabled><span class="lang-flag flag-nl" aria-hidden="true"></span><span class="lang-meta"><span class="lang-name" lang="nl">Nederlands</span><span class="lang-en" data-i18n="lang.sub.nl">Dutch · v1.1</span></span></button>
+          <button class="lang-card" data-lang="es" disabled><span class="lang-flag flag-es" aria-hidden="true"></span><span class="lang-meta"><span class="lang-name" lang="es">Español</span><span class="lang-en" data-i18n="lang.sub.es">Spanish · v1.1</span></span></button>
+          <button class="lang-card" data-lang="fr" disabled><span class="lang-flag flag-fr" aria-hidden="true"></span><span class="lang-meta"><span class="lang-name" lang="fr">Français</span><span class="lang-en" data-i18n="lang.sub.fr">French · v1.1</span></span></button>
+        </div>
+        <button class="btn btn-primary btn-arrow mt-16" data-action="go-ship-time" data-i18n="common.continue">Continue</button>
+        <div class="divider"></div>
+        <p class="eyebrow" data-i18n="lang.resetEyebrow">Start fresh</p>
+        <h2 class="h2" data-i18n="lang.resetTitle">Reset the app</h2>
+        <p class="lead" data-i18n="lang.resetSub">Clears your saved language, all aboard time and tour progress. Useful when handing the phone to someone else.</p>
+        <button class="btn btn-secondary" data-action="reset-app" data-i18n="lang.resetCta">Reset to welcome</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="ship-time" data-i18n-aria="screen.shipTime" aria-label="Set your ship's all aboard time">
+      <div class="topbar">
+        <button class="icon-btn" data-i18n-aria="aria.back" aria-label="Back" data-action="back">←</button>
+        <div class="vs-logo"><span class="vs-name" data-i18n="brand.name">Visit Southampton</span><span class="vs-sub" data-brand-sub>Cruise Day Out</span></div>
+        <span class="topbar-spacer"></span>
+      </div>
+      <div class="screen-pad">
+        <p class="eyebrow" data-i18n="ship.eyebrow">Step 2 of 2</p>
+        <h1 class="h1 screen-focus" tabindex="-1" data-i18n="ship.title">When's your all aboard?</h1>
+        <p class="lead" data-i18n="ship.sub">We'll keep an eye on the time and gently remind you when it's time to head back.</p>
+        <div class="time-input-card">
+          <input type="time" id="shipTimeInput" value="16:30" data-i18n-aria="aria.shipTime" aria-label="All aboard time" />
+          <div class="ship-quick-row">
+            <button data-quick="15:30">15:30</button>
+            <button data-quick="16:00">16:00</button>
+            <button data-quick="16:30">16:30</button>
+            <button data-quick="17:00">17:00</button>
+            <button data-quick="17:30">17:30</button>
+            <button data-quick="18:00">18:00</button>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-arrow" data-action="confirm-ship-time" data-i18n="ship.confirm">That's right</button>
+        <button class="btn btn-ghost" data-action="skip-ship-time" data-i18n="ship.skip">I'll set this later</button>
+        <button class="btn btn-secondary mt-12" data-action="not-cruise" data-i18n="ship.notCruise">I'm not on a cruise today</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="home" data-i18n-aria="screen.home" aria-label="Home">
+      <div class="topbar">
+        <div class="vs-logo"><span class="vs-name" data-i18n="brand.name">Visit Southampton</span><span class="vs-sub" data-brand-sub>Cruise Day Out</span></div>
+        <div class="topbar-actions">
+          <button class="countdown hidden" data-action="go-return" data-i18n-aria="aria.countdown" aria-label="Time until all aboard"><span class="dot"></span><span class="countdown-text">--:--</span></button>
+          <button class="icon-btn" data-i18n-aria="aria.help" aria-label="Help and safe spots" data-action="open-help" data-i18n-title="aria.help" title="Help and safe spots">🛟</button>
+          <button class="icon-btn" data-i18n-aria="aria.language" aria-label="Language" data-action="open-language" data-i18n-title="aria.changeLanguage" title="Change language">🌐</button>
+        </div>
+      </div>
+      <div class="yah" id="yahBanner">
+        <div class="yah-icon" aria-hidden="true">📍</div>
+        <div class="yah-text">
+          <p class="yah-eyebrow" data-i18n="home.youAreHere">You are here</p>
+          <h1 class="yah-name screen-focus" tabindex="-1" id="currentHubName">Southampton</h1>
+        </div>
+      </div>
+      <div id="tapBannerHost" aria-live="polite"></div>
+      <div id="noticesHost"></div>
+      <div id="nudgeHost"></div>
+      <div id="rejoinHost"></div>
+      <div id="continueHost"></div>
+      <div id="passportCardHost"></div>
+
+      <button class="events-pill" data-action="open-events" id="eventsPillHost">
+        <span class="events-pill-dot" aria-hidden="true"></span>
+        <span class="events-pill-text" id="eventsPillText"></span>
+        <span class="events-pill-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <div id="walkInSection">
+        <div class="screen-pad pt-14">
+          <p class="eyebrow" data-i18n="home.eyebrow1">Walk to the city</p>
+          <h2 class="h2" data-i18n="home.walkTitle">Quickest route in</h2>
+        </div>
+        <button class="walk-hero" data-action="start-walk-to-city">
+          <p class="we" data-i18n="home.walkEyebrow">QE2 Mile · direct</p>
+          <p class="wt" id="walkHeroTitle">Walk to the Old Town</p>
+          <p class="wm"><span id="walkHeroMins"></span><span class="dot"></span><span id="walkHeroStops"></span></p>
+        </button>
+        <p class="photo-credit photo-credit-inline" id="walkHeroCredit"></p>
+      </div>
+      <div class="screen-pad pt-4" id="cruisePromptHost"></div>
+      <div class="screen-pad pt-4">
+        <p class="eyebrow" data-i18n="home.eyebrow2">Discover Southampton</p>
+        <h2 class="h2" data-i18n="home.toursTitle">Pick a theme</h2>
+        <p class="lead" data-i18n="home.toursSub">Three curated walks. Pick one and we'll guide you stop by stop.</p>
+        <div id="tourCardsHost"></div>
+      </div>
+      <div class="screen-pad pt-4 seasonal-section" id="seasonalSection">
+        <p class="eyebrow seasonal-eyebrow" data-i18n="home.seasonalEyebrow">On now</p>
+        <h2 class="h2" data-i18n="home.seasonalTitle">Seasonal trail</h2>
+        <p class="lead" data-i18n="home.seasonalSub">Special trails available for a limited time.</p>
+        <div id="seasonalToursHost"></div>
+      </div>
+      <div id="feedbackHost"></div>
+      <div class="powered-by">
+        <span data-i18n="poweredBy">Powered by</span> <strong>Superspree · Loop</strong> <span class="version-badge">v2.0 demo</span>
+        <p class="sim-badge" data-i18n="demo.simBadge">Simulation: taps, stamps and codes are checked by a demo server running in your browser.</p>
+        <div class="reset-link"><a href="/?reset=1" data-i18n="home.resetDemo">Reset for next demo</a></div>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="tour-overview" data-i18n-aria="screen.tourOverview" aria-label="Tour overview">
+      <div class="topbar transparent overlay-bar">
+        <button class="icon-btn icon-btn-light" data-i18n-aria="aria.back" aria-label="Back" data-action="back">←</button>
+        <span class="topbar-spacer"></span>
+        <button class="icon-btn icon-btn-light" data-i18n-aria="aria.language" aria-label="Language" data-action="open-language">🌐</button>
+      </div>
+      <div class="overview-hero">
+        <img id="overviewHeroImg" src="data:," alt="" />
+        <div class="ovh-overlay">
+          <span class="ovh-theme" id="overviewTheme"></span>
+          <h1 class="ovh-title screen-focus" tabindex="-1" id="overviewTitle"></h1>
+          <p class="ovh-meta"><span id="overviewMins"></span><span class="dot"></span><span id="overviewStopsLabel"></span><span class="dot"></span><span id="overviewLength"></span></p>
+        </div>
+      </div>
+      <p class="photo-credit" id="overviewCredit"></p>
+      <div class="screen-pad">
+        <div id="overviewNotes"></div>
+        <p class="lead" id="overviewBlurb"></p>
+        <div class="stat-row">
+          <div class="stat-box"><div class="stat-num" id="statStops"></div><div class="stat-label" data-i18n="overview.stops">Stops</div></div>
+          <div class="stat-box"><div class="stat-num" id="statMins"></div><div class="stat-label" data-i18n="overview.minutes">Minutes</div></div>
+          <div class="stat-box"><div class="stat-num" id="statKm"></div><div class="stat-label" data-i18n="overview.km">km walk</div></div>
+        </div>
+        <div class="access-row">
+          <span class="access-pill" id="overviewStepFree"></span>
+          <span class="walking-note" id="overviewWalking"></span>
+        </div>
+        <label class="toggle-row"><input type="checkbox" id="stepFreeToggle" data-action="toggle-step-free" /> <span><span class="toggle-label" data-i18n="trail.stepFreeToggle">Prefer step-free routes</span><span class="toggle-help" data-i18n="trail.stepFreeHelp"></span></span></label>
+        <h2 class="h2 mt-24" data-i18n="overview.whatYoullSee">What you'll see</h2>
+        <ol class="stop-list" id="overviewStopList"></ol>
+        <button class="btn btn-primary btn-arrow mt-16" data-action="start-tour" data-i18n="overview.start">Start the tour</button>
+        <button class="btn btn-ghost" data-action="back" data-i18n="overview.cancel">Choose a different tour</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="step" data-i18n-aria="screen.step" aria-label="Walking directions">
+      <div class="topbar transparent overlay-bar">
+        <button class="icon-btn icon-btn-light" data-i18n-aria="aria.exitTour" aria-label="Exit tour" data-action="exit-tour">←</button>
+        <button class="countdown hidden" data-action="go-return" data-i18n-aria="aria.countdown" aria-label="Time until all aboard"><span class="dot"></span><span class="countdown-text">--:--</span></button>
+        <button class="icon-btn icon-btn-light" data-i18n-aria="aria.language" aria-label="Language" data-action="open-language">🌐</button>
+      </div>
+      <div class="step-hero">
+        <img id="stepHeroImg" src="data:," alt="" />
+        <span class="step-eyebrow" id="stepEyebrow"></span>
+      </div>
+      <p class="photo-credit" id="stepCredit"></p>
+      <div class="step-body">
+        <div class="step-progress" id="stepProgress" aria-hidden="true"></div>
+        <p class="eyebrow" id="stepContext"></p>
+        <h1 class="h1 screen-focus" tabindex="-1" id="stepTitle"></h1>
+        <p class="lead" id="stepCopy"></p>
+        <div id="stepNotes"></div>
+        <div class="step-instruction">
+          <div class="step-arrow" aria-hidden="true">→</div>
+          <div>
+            <div class="step-text" id="stepDirection"></div>
+            <p class="step-access" id="stepAccess"></p>
+          </div>
+        </div>
+        <p class="tap-hint hidden" id="stepTapHint"></p>
+        <div class="minimap">
+          <div class="minimap-title"><span data-i18n="step.routeMap">Your route</span> <span id="minimapProgress"></span></div>
+          <svg id="minimapSvg" viewBox="0 0 320 80" aria-hidden="true"></svg>
+        </div>
+        <div id="routeSummaryHost"></div>
+        <p class="demo-note" data-i18n="trail.demoRoute">Demo content: these route steps have not been walked and checked yet.</p>
+      </div>
+      <div class="step-actions">
+        <button class="btn btn-secondary" data-action="prev-step" data-i18n-aria="aria.prevStop" aria-label="Previous stop">←</button>
+        <button class="btn btn-primary btn-arrow" data-action="next-step" id="stepNextBtn" data-i18n="step.next">I'm here. What's next?</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="return-to-ship" data-i18n-aria="screen.return" aria-label="Walking back to your ship">
+      <div class="topbar">
+        <button class="icon-btn" data-i18n-aria="aria.back" aria-label="Back" data-action="back">←</button>
+        <div class="vs-logo"><span class="vs-name" data-i18n="brand.name">Visit Southampton</span><span class="vs-sub" data-brand-sub>Cruise Day Out</span></div>
+        <span class="topbar-spacer"></span>
+      </div>
+      <div class="screen-pad">
+        <p class="eyebrow eyebrow-coral" data-i18n="return.eyebrow">Heading back</p>
+        <h1 class="h1 screen-focus" tabindex="-1" data-i18n="return.title">Walk back to your ship</h1>
+        <p class="lead" id="returnLead"></p>
+        <div id="returnStatus"></div>
+        <div class="card" id="returnStepsCard">
+          <div class="card-pad">
+            <h2 class="h2" data-i18n="return.directionsTitle">Step by step</h2>
+            <ol class="stop-list" id="returnSteps"></ol>
+          </div>
+        </div>
+        <p class="caution-note" data-i18n="return.caution">Walking times are estimates. Always confirm your all aboard time with your cruise line.</p>
+        <button class="btn btn-coral btn-arrow" data-action="confirm-returned" data-i18n="return.confirm">I'm back at the terminal</button>
+        <button class="btn btn-ghost" data-action="back" data-i18n="return.notYet">Not yet, keep exploring</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="arrived" data-i18n-aria="screen.arrived" aria-label="Arrived">
+      <div class="arrived-hero">
+        <div class="arrived-icon" aria-hidden="true">✓</div>
+        <h1 class="arrived-h1 screen-focus" tabindex="-1" id="arrivedTitle"></h1>
+        <p class="arrived-sub" id="arrivedSub"></p>
+      </div>
+      <div class="screen-pad">
+        <button class="btn btn-primary" data-action="go-home" data-i18n="arrived.exploreMore">Explore another tour</button>
+        <button class="btn btn-secondary cruise-only" data-action="go-return" data-i18n="arrived.headBack">Head back to the ship</button>
+      </div>
+      <div class="powered-by"><span data-i18n="poweredBy">Powered by</span> <strong>Superspree · Loop</strong> <span class="version-badge">v2.0 demo</span></div>
+    </section>
+
+    <section class="screen" data-screen="help" data-i18n-aria="screen.help" aria-label="Help and safe spots">
+      <div class="topbar">
+        <button class="icon-btn" data-i18n-aria="aria.back" aria-label="Back" data-action="back">←</button>
+        <div class="vs-logo"><span class="vs-name" data-i18n="brand.name">Visit Southampton</span><span class="vs-sub" data-brand-sub>Cruise Day Out</span></div>
+        <span class="topbar-spacer"></span>
+      </div>
+      <div class="help-hero">
+        <p class="eyebrow" data-i18n="help.eyebrow">Help & safe spots</p>
+        <h1 class="h1 screen-focus" tabindex="-1" data-i18n="help.title">You're never far from someone friendly.</h1>
+        <p class="lead" data-i18n="help.sub">Southampton's a welcoming city. If you need a hand, here's how to find it.</p>
+      </div>
+      <div class="screen-pad pt-6">
+        <div class="help-section">
+          <p class="eyebrow eyebrow-coral" data-i18n="help.emergencyEyebrow">If it's urgent</p>
+          <h2 class="h2" data-i18n="help.emergencyTitle">Call for help</h2>
+          <a href="tel:999" class="help-call help-call-urgent">
+            <span class="help-call-num">999</span>
+            <span class="help-call-label" data-i18n="help.call999">Emergency. Police, fire, ambulance.</span>
+          </a>
+          <a href="tel:101" class="help-call">
+            <span class="help-call-num">101</span>
+            <span class="help-call-label" data-i18n="help.call101">Hampshire and Isle of Wight Constabulary, non emergency.</span>
+          </a>
+        </div>
+        <div class="angela-card">
+          <p class="eyebrow eyebrow-navy" data-i18n="help.angelaEyebrow">Ask for Angela</p>
+          <h2 class="h2" data-i18n="help.angelaTitle">In any pub or bar, ask for "Angela"</h2>
+          <p data-i18n="help.angelaSub"></p>
+        </div>
+        <div class="help-section">
+          <p class="eyebrow" data-i18n="help.spotsEyebrow">Friendly faces</p>
+          <h2 class="h2" data-i18n="help.spotsTitle">Safe spots near you</h2>
+          <p class="lead" data-i18n="help.spotsSub"></p>
+          <ul class="help-list" id="safeSpotsList"></ul>
+        </div>
+        <div class="help-section">
+          <p class="eyebrow" data-i18n="help.duskEyebrow">Walking back later</p>
+          <h2 class="h2" data-i18n="help.duskTitle">After dark, stick to the busy streets</h2>
+          <p data-i18n="help.duskSub"></p>
+        </div>
+        <div class="help-section cruise-only">
+          <p class="eyebrow" data-i18n="help.lostEyebrow">Lost or stranded</p>
+          <h2 class="h2" data-i18n="help.lostTitle">Getting back to your ship</h2>
+          <p data-i18n="help.lostSub"></p>
+        </div>
+        <div class="help-section">
+          <p class="eyebrow" data-i18n="help.buddyEyebrow">Travelling with company</p>
+          <h2 class="h2" data-i18n="help.buddyTitle">Share your plan</h2>
+          <p data-i18n="help.buddySub"></p>
+          <button class="btn btn-secondary mt-12" data-action="share-plan" data-i18n="buddy.share">Share this plan</button>
+          <p class="share-status" id="shareStatus" role="status"></p>
+        </div>
+        <p class="privacy-note" data-i18n="privacy.note"></p>
+      </div>
+      <div class="powered-by"><span data-i18n="poweredBy">Powered by</span> <strong>Superspree · Loop</strong> <span class="version-badge">v2.0 demo</span></div>
+    </section>
+
+    <section class="screen" data-screen="passport" data-i18n-aria="passport.title" aria-label="Your Cruise Day Passport">
+      <div class="topbar">
+        <button class="icon-btn" data-i18n-aria="aria.back" aria-label="Back" data-action="back">←</button>
+        <div class="vs-logo"><span class="vs-name" data-i18n="brand.name">Visit Southampton</span><span class="vs-sub" data-brand-sub>Cruise Day Out</span></div>
+        <span class="topbar-spacer"></span>
+      </div>
+      <div class="passport-hero">
+        <div class="passport-hero-stamp" aria-hidden="true">✓</div>
+        <h1 class="h1 screen-focus" tabindex="-1" data-i18n="passport.title">Your Cruise Day Passport</h1>
+        <p class="lead" data-i18n="passport.sub"></p>
+        <p class="passport-count" id="passportCount"></p>
+        <p class="pending-note hidden" id="passportPending"></p>
+      </div>
+      <div class="screen-pad">
+        <h2 class="h2" data-i18n="passport.stampsTitle">Your stamps</h2>
+        <div class="stamp-grid" id="passportStampGrid"></div>
+        <h2 class="h2 mt-24" data-i18n="passport.rewardsTitle">Your rewards</h2>
+        <p class="lead" data-i18n="passport.rewardsSub"></p>
+        <p class="demo-note" data-i18n="passport.demoRewards"></p>
+        <div id="passportRewardsHost"></div>
+      </div>
+      <div class="powered-by"><span data-i18n="poweredBy">Powered by</span> <strong>Superspree · Loop</strong> <span class="version-badge">v2.0 demo</span></div>
+    </section>
+
+    <section class="screen" data-screen="events" data-i18n-aria="screen.events" aria-label="What's on today">
+      <div class="topbar">
+        <button class="icon-btn" data-i18n-aria="aria.back" aria-label="Back" data-action="back">←</button>
+        <div class="vs-logo"><span class="vs-name" data-i18n="brand.name">Visit Southampton</span><span class="vs-sub" data-i18n="brand.subEvents">What's on today</span></div>
+        <span class="topbar-spacer"></span>
+      </div>
+      <div class="screen-pad">
+        <p class="eyebrow" data-i18n="events.eyebrow">Happening today</p>
+        <h1 class="h1 screen-focus" tabindex="-1" data-i18n="events.title">What's on in Southampton</h1>
+        <p class="lead" data-i18n="events.subRegister"></p>
+        <div class="tabs" role="tablist" data-i18n-aria="events.tabsLabel" aria-label="What's on views">
+          <button role="tab" class="tab" id="tab-today" data-tab="today" aria-selected="true" aria-controls="eventsPanel" data-i18n="events.tabToday">Today</button>
+          <button role="tab" class="tab" id="tab-week" data-tab="week" aria-selected="false" aria-controls="eventsPanel" tabindex="-1" data-i18n="events.tabWeek">This week</button>
+          <button role="tab" class="tab" id="tab-places" data-tab="places" aria-selected="false" aria-controls="eventsPanel" tabindex="-1" data-i18n="events.tabPlaces">Things to do</button>
+        </div>
+        <div id="eventsPanel" role="tabpanel" aria-labelledby="tab-today">
+          <div id="eventsFilters"></div>
+          <p class="demo-note" id="eventsDemoNote"></p>
+          <div id="eventsListHost"></div>
+          <p class="caution-note" id="eventsTimesNote" data-i18n="events.timesChange"></p>
+        </div>
+        <a class="btn btn-secondary mt-16" href="https://www.visitsouthampton.co.uk/events/" target="_blank" rel="noopener noreferrer" data-i18n="events.viewAll">See all events on Visit Southampton</a>
+      </div>
+      <div class="powered-by"><span data-i18n="poweredBy">Powered by</span> <strong>Superspree · Loop</strong> <span class="version-badge">v2.0 demo</span></div>
+    </section>
+
+    <section class="screen" data-screen="snow-overview" data-i18n-aria="screen.snowOverview" aria-label="Snow Windows Trail">
+      <div class="topbar transparent overlay-bar">
+        <button class="icon-btn icon-btn-light" data-i18n-aria="aria.back" aria-label="Back" data-action="back">←</button>
+        <span class="topbar-spacer"></span>
+        <button class="icon-btn icon-btn-light" data-i18n-aria="aria.language" aria-label="Language" data-action="open-language">🌐</button>
+      </div>
+      <div class="overview-hero snow-hero">
+        <img id="snowOverviewImg" src="data:," alt="" />
+        <div class="ovh-overlay">
+          <span class="ovh-theme snow-theme">❄ <span data-i18n="snow.seasonal">Seasonal</span></span>
+          <h1 class="ovh-title screen-focus" tabindex="-1" id="snowOverviewTitle"></h1>
+          <p class="ovh-meta" id="snowOverviewDates"></p>
+        </div>
+      </div>
+      <div class="screen-pad">
+        <p class="lead" id="snowOverviewBlurb"></p>
+        <p class="snow-prize-note" id="snowOverviewPrize"></p>
+        <h2 class="h2 mt-24" data-i18n="snow.pickRoute">Pick your route</h2>
+        <p class="lead" data-i18n="snow.pickRouteSub"></p>
+        <div id="snowRoutePickerHost"></div>
+      </div>
+      <div class="powered-by"><span data-i18n="poweredBy">Powered by</span> <strong>Superspree · Loop</strong> <span class="version-badge">v2.0 demo</span></div>
+    </section>
+
+    <section class="screen" data-screen="snow-route" data-i18n-aria="screen.snowRoute" aria-label="Your Snow Trail route">
+      <div class="topbar">
+        <button class="icon-btn" data-i18n-aria="aria.backToRoutePicker" aria-label="Back to route picker" data-action="snow-back-to-overview">←</button>
+        <div class="vs-logo"><span class="vs-name" data-i18n="brand.name">Visit Southampton</span><span class="vs-sub" data-i18n="brand.subSnow">Snow Trail</span></div>
+        <span class="topbar-spacer"></span>
+      </div>
+      <div class="passport-hero">
+        <div class="passport-hero-stamp snow-hero-stamp" aria-hidden="true" id="snowRouteIcon">❄</div>
+        <h1 class="h1 screen-focus" tabindex="-1" id="snowRouteName"></h1>
+        <p class="lead" id="snowRouteMeta"></p>
+        <p class="passport-count" id="snowRouteCount"></p>
+      </div>
+      <div class="screen-pad">
+        <h2 class="h2" data-i18n="snow.stopsTitle">All your windows</h2>
+        <p class="lead" data-i18n="snow.stopsSub"></p>
+        <div class="stamp-grid snow-stamp-grid" id="snowStopGrid"></div>
+        <div id="snowSubmitCtaHost"></div>
+      </div>
+      <div class="powered-by"><span data-i18n="poweredBy">Powered by</span> <strong>Superspree · Loop</strong> <span class="version-badge">v2.0 demo</span></div>
+    </section>
+
+    <section class="screen" data-screen="snow-stop" data-i18n-aria="screen.snowStop" aria-label="Snow Trail stop">
+      <div class="topbar">
+        <button class="icon-btn" data-i18n-aria="aria.backToRoute" aria-label="Back to route" data-action="back">←</button>
+        <div class="vs-logo"><span class="vs-name" data-i18n="brand.name">Visit Southampton</span><span class="vs-sub" data-i18n="brand.subSnow">Snow Trail</span></div>
+        <span class="topbar-spacer"></span>
+      </div>
+      <div class="screen-pad">
+        <p class="eyebrow" id="snowStopNumber"></p>
+        <h1 class="h1 screen-focus" tabindex="-1" id="snowStopName"></h1>
+        <p class="lead" id="snowStopAddress"></p>
+        <div class="snow-found-banner hidden" id="snowStopFoundBanner">
+          <span aria-hidden="true">✓</span>
+          <span data-i18n="snow.foundBanner">You found this one</span>
+        </div>
+        <p class="tap-hint hidden" id="snowStopNeedTap" data-i18n="snow.needTap"></p>
+        <div class="card">
+          <div class="card-pad">
+            <h2 class="h2" data-i18n="snow.promptTitle">What can you see?</h2>
+            <label class="lead" for="snowStopAnswer" data-i18n="snow.promptSub"></label>
+            <textarea id="snowStopAnswer" class="snow-answer" rows="3" data-i18n-ph="snow.answerPlaceholder" placeholder="e.g. a snowman with a top hat"></textarea>
+            <button class="btn btn-primary btn-arrow mt-12" data-action="mark-snow-found" data-i18n="snow.markFound">I found it</button>
+            <button class="btn btn-ghost" data-action="back" data-i18n="snow.notYet">Not yet, take me back</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="snow-submit" data-i18n-aria="screen.snowSubmit" aria-label="Submit your Snow Trail">
+      <div class="topbar">
+        <button class="icon-btn" data-i18n-aria="aria.back" aria-label="Back" data-action="back">←</button>
+        <div class="vs-logo"><span class="vs-name" data-i18n="brand.name">Visit Southampton</span><span class="vs-sub" data-i18n="brand.subSnow">Snow Trail</span></div>
+        <span class="topbar-spacer"></span>
+      </div>
+      <div id="snowSubmitFormHost">
+        <div class="screen-pad">
+          <p class="eyebrow eyebrow-coral" data-i18n="snow.submitEyebrow">Almost done</p>
+          <h1 class="h1 screen-focus" tabindex="-1" data-i18n="snow.submitTitle">Claim your prize</h1>
+          <p class="lead" data-i18n="snow.submitSub"></p>
+          <form class="snow-form" id="snowForm" novalidate>
+            <label class="snow-label"><span data-i18n="snow.fName">Your name</span><input type="text" id="snowFieldName" autocomplete="name" maxlength="80" /></label>
+            <label class="snow-label"><span data-i18n="snow.fEmail">Email</span><input type="email" id="snowFieldEmail" autocomplete="email" maxlength="120" /></label>
+            <label class="snow-label"><span data-i18n="snow.fPostcode">Home postcode</span><input type="text" id="snowFieldPostcode" autocomplete="postal-code" maxlength="10" /></label>
+            <div class="snow-row">
+              <label class="snow-label snow-label-half"><span data-i18n="snow.fAdults">Adults</span><input type="number" id="snowFieldAdults" min="0" max="20" value="2" /></label>
+              <label class="snow-label snow-label-half"><span data-i18n="snow.fChildren">Children</span><input type="number" id="snowFieldChildren" min="0" max="20" value="0" /></label>
+            </div>
+            <fieldset class="snow-rating">
+              <legend data-i18n="snow.fRating">Did you enjoy the trail?</legend>
+              <div class="snow-rating-row">
+                <button type="button" class="snow-rating-btn" data-rating="4" data-i18n-aria="rating.loved" aria-label="Loved it" aria-pressed="false">😀</button>
+                <button type="button" class="snow-rating-btn" data-rating="3" data-i18n-aria="rating.enjoyed" aria-label="Enjoyed it" aria-pressed="false">🙂</button>
+                <button type="button" class="snow-rating-btn" data-rating="2" data-i18n-aria="rating.ok" aria-label="It was OK" aria-pressed="false">😐</button>
+                <button type="button" class="snow-rating-btn" data-rating="1" data-i18n-aria="rating.notForMe" aria-label="Not for me" aria-pressed="false">😞</button>
+              </div>
+            </fieldset>
+            <label class="snow-label"><span data-i18n="snow.fComments">Anything to share?</span><textarea id="snowFieldComments" rows="3" maxlength="500"></textarea></label>
+            <p class="snow-disclaimer" data-i18n="snow.disclaimer"></p>
+            <p class="snow-disclaimer" data-i18n="snow.adults"></p>
+            <p class="snow-disclaimer" id="snowRetention"></p>
+            <div class="snow-error hidden" id="snowSubmitError" role="alert"></div>
+            <button type="button" class="btn btn-primary btn-arrow" data-action="submit-snow" data-i18n="snow.submitCta">Submit my trail</button>
+            <button type="button" class="btn btn-ghost" data-action="submit-snow-anon" data-i18n="snow.submitSkip">Just give me my code</button>
+          </form>
+        </div>
+      </div>
+      <div id="snowConfirmationHost" class="hidden">
+        <div class="arrived-hero arrived-hero-snow">
+          <div class="arrived-icon" aria-hidden="true">❄</div>
+          <h2 class="arrived-h1" id="snowConfTitle" tabindex="-1" data-i18n="snow.confTitle">Trail complete</h2>
+          <p class="arrived-sub" data-i18n="snow.confSub"></p>
+        </div>
+        <div class="screen-pad">
+          <div class="reward-code reward-code-snow">
+            <span class="reward-code-num" id="snowSubmissionCode"></span>
+            <div class="reward-code-instructions" data-i18n="snow.confCodeNote"></div>
+            <div class="reward-code-sim" data-i18n="snow.codeSim"></div>
+          </div>
+          <button class="btn btn-primary" data-action="go-home" data-i18n="snow.confHome">Back to home</button>
+        </div>
+      </div>
+      <div class="powered-by"><span data-i18n="poweredBy">Powered by</span> <strong>Superspree · Loop</strong> <span class="version-badge">v2.0 demo</span></div>
+    </section>
+
+    <div class="stamp-toast" id="stampToast" role="status" aria-live="polite"></div>
+    <div class="floating-return hidden" id="floatingReturn">
+      <button data-action="go-return" data-i18n-aria="aria.returnToShip" aria-label="Return to ship">⛴ <span data-i18n="floating.return">Back to ship</span></button>
+    </div>
+  </main>
+  <noscript><p class="noscript">This demo needs JavaScript switched on.</p></noscript>
+</body>
+</html>

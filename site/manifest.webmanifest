@@ -1,0 +1,16 @@
+{
+  "name": "Visit Southampton · RouteLoop (demo)",
+  "short_name": "RouteLoop",
+  "description": "Tap a Loop, pick a trail, discover Southampton city centre.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4efe7",
+  "theme_color": "#b3160f",
+  "lang": "en-GB",
+  "icons": [
+    { "src": "/img/icons/icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/img/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/img/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
