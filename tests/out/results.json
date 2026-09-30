@@ -1,0 +1,193 @@
+[
+  {
+    "n": 1,
+    "name": "Valid tap",
+    "pass": true,
+    "notes": [
+      "screen=home, place=Bargate, stamps=[\"k7Qx2\"], toast=\"✓Stamp earned at Bargate\""
+    ],
+    "ms": 1451
+  },
+  {
+    "n": 2,
+    "name": "Replay",
+    "pass": true,
+    "notes": [
+      "banner=\"This tap has already been used. Tap the Loop again\", stamps=[\"k7Qx2\"]"
+    ],
+    "ms": 1057
+  },
+  {
+    "n": 3,
+    "name": "Plain link (browse mode)",
+    "pass": true,
+    "notes": [
+      "place=SeaCity Museum, banner=\"You're browsing. Tap the Loop here to collect a stamp.\", stamps=[\"k7Qx2\"], token tag=k7Qx2",
+      "forged reward claim -> {\"ok\":false,\"reason\":\"token\"}"
+    ],
+    "ms": 300
+  },
+  {
+    "n": 4,
+    "name": "Trail run (Titanic to Tudor)",
+    "pass": true,
+    "notes": [
+      "L027: 1 card(s) shown",
+      "L023: 2 card(s) shown",
+      "L010: 1 card(s) shown",
+      "L011: 1 card(s) shown",
+      "L013: 1 card(s) shown",
+      "end: \"Tour complete\" / \"You followed the Titanic to Tudor trail. We hope Southampton charmed you.\""
+    ],
+    "ms": 10288
+  },
+  {
+    "n": 5,
+    "name": "Rejoin",
+    "pass": true,
+    "notes": [
+      "Rejoin your trail≈ 12 min to Bargate [total 12] | Carry on from hereStart from the nearest stop, Holyrood Church (≈ 3 min) [total 3]",
+      "rejoin chain: 3 + 5 + 4 = 12; route total 12; card said 12"
+    ],
+    "ms": 6667
+  },
+  {
+    "n": 6,
+    "name": "Closed leg",
+    "pass": true,
+    "notes": [
+      "admin detour preview: Demo content Detour With this leg closed the app routes L003 (5 min) then L040 (9 min) then L014 (4 min) then L012 (5 min): 23 min instead of 4.",
+      "Bargate to Old Town now: L003 then L040 then L014 then L012; note: \"This part of the trail is closed today, so we have chained together other checked walks.\"",
+      "with no alternative: \"There's no checked route for this part right now. Please use the help screen. Open help\""
+    ],
+    "ms": 8728
+  },
+  {
+    "n": 7,
+    "name": "Return to ship",
+    "pass": true,
+    "notes": [
+      "all aboard 18:18; countdown class \"countdown red\"; walk back 12 min; warning shown=true",
+      "with 23:59: leave-by shown=true",
+      "walk back from each place: cruise-terminal 0, dancing-man 6, holyrood 9, old-town 8, tudor-house 5, bargate 12, westquay 14, oxford-street 12, cultural-quarter 23, seacity 21, art-gallery 25, mayflower 28, titanic-memorial 26, bedford-place 26",
+      "non-cruise: countdown=false, floating=false, cruise-only sections visible=false, go-return lands on home"
+    ],
+    "ms": 5764
+  },
+  {
+    "n": 8,
+    "name": "Registers",
+    "pass": true,
+    "notes": [
+      "London date 2026-09-30: 4 cards in Today (register says 4); not-today cards: 0; expired in register: false; past fixture row imported: false",
+      "This week: 22 events over 7 days (Wed, 30 Sept, Thu, 1 Oct, Fri, 2 Oct, Sat, 3 Oct, Sun, 4 Oct, Mon, 5 Oct, Tue, 6 Oct)",
+      "Things to do: 16 places"
+    ],
+    "ms": 1491
+  },
+  {
+    "n": 9,
+    "name": "Source registry: add iCal fixture",
+    "pass": true,
+    "notes": [
+      "preview: Titanic Crew Stories Talk; Family Trail: Find the Ship's Cat; Curator's Lunchtime Talk; Tudor Kitchen Garden Tour; Tudor House After Hours; Model Ship Weekend",
+      "Approved: 6 records read, 4 new in the register, 2 merged as duplicates",
+      "Today: Light on the Water: Coastal Paintings; Portraits of a Port City; Family Trail: Find the Ship's Cat; Evening Jazz on Guildhall Square; Musical Theatre Gala",
+      "duplicates: Curator's talk x1 (Source: Southampton City Art Gallery events (demo fixture) · Also listed by Southampton museums and galleries (demo iCal feed), Visit Southampton events (demo fixture)); Tudor tour x1 (Source: Southampton museums and galleries (demo iCal feed) · Also listed by Visit Southampton events (demo fixture))"
+    ],
+    "ms": 2691
+  },
+  {
+    "n": 10,
+    "name": "Quiet nudge",
+    "pass": true,
+    "notes": [
+      "nudge: \"A quieter optionThe Quiet QuarterThe Old Town is busy today. This route is quieter.Try this quieter routeNo thanksMulti-ship day (demo)\"",
+      "hidden after No thanks, and still hidden after reload"
+    ],
+    "ms": 3132
+  },
+  {
+    "n": 11,
+    "name": "Feedback queued offline",
+    "pass": true,
+    "notes": [
+      "offline: \"Thank you. We'll send it when you're back online.\", demo panel queue=1",
+      "back online: queue=0; server has 1 item(s): {\"tag\":\"k7Qx2\",\"rating\":3,\"comment\":\"Lovely gate\",\"ts\":1790787526363,\"lang\":\"en\",\"day\":\"2026-09-30\",\"sid\":\"08781c32ee50773b2d7e4ac5aa32f5fa\"}"
+    ],
+    "ms": 2537
+  },
+  {
+    "n": 12,
+    "name": "Offline after one online visit",
+    "pass": true,
+    "notes": [
+      "caches: rl-shell, rl-runtime (92 entries, names include the scope)",
+      "offline reload: banner=true, place=Bargate, trail step screen=step, hero image loaded=true (/img/places/titanic-memorial.svg)"
+    ],
+    "ms": 4740
+  },
+  {
+    "n": 13,
+    "name": "Languages",
+    "pass": true,
+    "notes": [
+      "German keys missing: 0 of 343; disabled languages: it, nl, es, fr; untranslated visible strings: none"
+    ],
+    "ms": 35726
+  },
+  {
+    "n": 14,
+    "name": "Accessibility (axe-core and keyboard)",
+    "pass": true,
+    "notes": [
+      "welcome: no violations",
+      "language: no violations",
+      "ship time: no violations",
+      "home (after tap): no violations",
+      "trail overview: no violations",
+      "trail step: no violations",
+      "return to ship: no violations",
+      "what's on: no violations",
+      "things to do: no violations",
+      "passport: no violations",
+      "help: no violations",
+      "snow overview: no violations",
+      "snow route: no violations",
+      "admin sources: no violations",
+      "admin publish: no violations",
+      "keyboard: skip setup, open trail, toggle step-free (true), start, next (step), exit, What's on, arrow to This week (true); focus ring on stepTitle: outline none 0px",
+      "home touch targets under 44 px: none"
+    ],
+    "ms": 14812
+  },
+  {
+    "n": 15,
+    "name": "Speed and size",
+    "pass": true,
+    "notes": [
+      "throttled (150 ms RTT, 1.6 Mbps, 4x CPU), cold cache: first useful screen (welcome ready) 2160 ms from navigation; FCP 1008 ms; DOMContentLoaded 1777 ms",
+      "bytes over the wire (compressed as served, headers included): total 204.9 KB; excluding images 169.6 KB (fonts 53.4 KB); images 35.3 KB; by type Document 7.9, Script 62.8, Stylesheet 11, Font 53.4, Other 23.1, Image 35.3, Fetch 11.5",
+      "bodies only (gzip), 56 requests: shell 70 KB, data 19.3 KB, strings 6 KB, fonts 52.8 KB, demo fixtures 2.8 KB, images 35 KB; shell + data + strings = 95.4 KB, plus fonts = 148.2 KB"
+    ],
+    "ms": 3338
+  },
+  {
+    "n": 16,
+    "name": "Shared phone reset",
+    "pass": true,
+    "notes": [
+      "before: lang=de, ship=16:30, stamps=1, trail=history; after: screen=welcome, saved state keys=0, html lang=en, new session key=true"
+    ],
+    "ms": 3865
+  },
+  {
+    "n": 17,
+    "name": "Publish and rollback",
+    "pass": true,
+    "notes": [
+      "before \"Titanic to Tudor\"; published v1; open app showed \"Update ready New city content is ready. Refresh Later\" and then \"Titanic to Tudor: Autumn Edition\"; after rollback \"Titanic to Tudor\""
+    ],
+    "ms": 3094
+  }
+]
