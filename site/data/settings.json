@@ -1,0 +1,100 @@
+{
+  "brand": {
+    "name": "Visit Southampton"
+  },
+  "terminalTag": "tR4mQ",
+  "returnMarginMin": 15,
+  "amberThresholdMin": 90,
+  "tokenTtlMin": 10,
+  "nudgeShare": 1,
+  "feedbackMaxChars": 140,
+  "feedbackBatchSize": 5,
+  "walkIn": {
+    "from": "tR4mQ",
+    "to": "k7Qx2",
+    "legs": [
+      "L001",
+      "L002"
+    ],
+    "label": {
+      "en": "the Old Town",
+      "de": "die Altstadt"
+    },
+    "image": "/img/photos/whirlwind-tour.webp"
+  },
+  "welcomeImage": "/img/photos/hero-welcome.webp",
+  "passportOrder": [
+    "tR4mQ",
+    "k7Qx2",
+    "w5Jp3",
+    "q2Ez7",
+    "c1Gv9",
+    "x8Fs4",
+    "m3Rt9",
+    "d9Wv2"
+  ],
+  "legacySlugs": {
+    "cruise-terminal": "tR4mQ",
+    "dancing-man": "d9Wv2",
+    "holyrood": "h3Nc8",
+    "old-town": "q2Ez7",
+    "tudor-house": "u6Hy1",
+    "bargate": "k7Qx2",
+    "westquay": "w5Jp3",
+    "oxford-street": "x8Fs4",
+    "cultural-quarter": "c1Gv9",
+    "seacity": "m3Rt9",
+    "art-gallery": "a4Lb6",
+    "mayflower": "p8Zw1",
+    "titanic-memorial": "e2Tk5",
+    "bedford-place": "b7Yd3"
+  },
+  "zones": {
+    "port": {
+      "en": "Cruise terminal",
+      "de": "Kreuzfahrtterminal"
+    },
+    "waterfront": {
+      "en": "Waterfront",
+      "de": "Hafen"
+    },
+    "old-town": {
+      "en": "Old Town",
+      "de": "Altstadt"
+    },
+    "westquay": {
+      "en": "WestQuay",
+      "de": "WestQuay"
+    },
+    "oxford": {
+      "en": "Oxford Street",
+      "de": "Oxford Street"
+    },
+    "above-bar": {
+      "en": "Above Bar",
+      "de": "Above Bar"
+    },
+    "cultural": {
+      "en": "Cultural Quarter",
+      "de": "Kulturviertel"
+    },
+    "parks": {
+      "en": "Parks",
+      "de": "Parks"
+    },
+    "bedford": {
+      "en": "Bedford Place",
+      "de": "Bedford Place"
+    }
+  },
+  "eventCategories": [
+    "theatre",
+    "music",
+    "exhibition",
+    "family",
+    "talk",
+    "tour",
+    "market",
+    "food"
+  ]
+}

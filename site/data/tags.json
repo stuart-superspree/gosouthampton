@@ -1,0 +1,904 @@
+[
+  {
+    "id": "tR4mQ",
+    "slug": "cruise-terminal",
+    "kind": "loop",
+    "name": {
+      "en": "Cruise Terminal",
+      "de": "Kreuzfahrtterminal"
+    },
+    "zone": "port",
+    "setting": "indoor",
+    "collectible": true,
+    "status": "active",
+    "walkBackMin": 0,
+    "image": "/img/photos/cruise-terminal-aerial.webp",
+    "motif": "ship",
+    "blurb": null,
+    "aliases": [
+      "Cruise Terminal",
+      "City Cruise Terminal"
+    ],
+    "board": "BRD-CRU-01",
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "d9Wv2",
+    "slug": "dancing-man",
+    "kind": "loop",
+    "name": {
+      "en": "Dancing Man Brewery",
+      "de": "Dancing Man Brewery"
+    },
+    "zone": "waterfront",
+    "setting": "outdoor",
+    "collectible": true,
+    "status": "active",
+    "walkBackMin": 6,
+    "image": "/img/photos/dancing-man.webp",
+    "motif": "pub",
+    "blurb": {
+      "en": "End at the Dancing Man, a 14th century wool warehouse, now an award winning brewpub on the water. A pint here is the way to finish.",
+      "de": "Abschluss im Dancing Man, einem Wolllager aus dem 14. Jahrhundert, heute preisgekrönter Brauereipub am Wasser."
+    },
+    "aliases": [
+      "Dancing Man Brewery",
+      "Dancing Man",
+      "Wool House"
+    ],
+    "board": "BRD-DAN-01",
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "h3Nc8",
+    "slug": "holyrood",
+    "kind": "loop",
+    "name": {
+      "en": "Holyrood Church",
+      "de": "Holyrood Church"
+    },
+    "zone": "old-town",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": 9,
+    "image": "/img/places/holyrood.svg",
+    "motif": "church",
+    "blurb": {
+      "en": "Bombed in 1940 and left as a ruin in memory of those lost at sea. Memorials mark the Titanic crew and the merchant navy, and outside stands an anchor from the QE2.",
+      "de": "1940 zerbombt und als Ruine zum Gedenken belassen. Gedenkstätten erinnern an die Titanic-Crew und die Handelsmarine, und vor der Kirche steht ein Anker der QE2."
+    },
+    "aliases": [
+      "Holyrood Church"
+    ],
+    "board": "BRD-HOL-01",
+    "installed": null,
+    "demo": true
+  },
+  {
+    "id": "q2Ez7",
+    "slug": "old-town",
+    "kind": "loop",
+    "name": {
+      "en": "Old Town · Town Walls",
+      "de": "Altstadt · Stadtmauer"
+    },
+    "zone": "old-town",
+    "setting": "outdoor",
+    "collectible": true,
+    "status": "active",
+    "walkBackMin": 8,
+    "image": "/img/photos/walls-watermark.webp",
+    "motif": "walls",
+    "blurb": {
+      "en": "Some of England's best preserved medieval walls.",
+      "de": "Einige der besterhaltenen Mauern Englands."
+    },
+    "aliases": [
+      "Town Walls",
+      "Old Town",
+      "Medieval town walls",
+      "Western Esplanade"
+    ],
+    "board": "BRD-OLD-01",
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "u6Hy1",
+    "slug": "tudor-house",
+    "kind": "loop",
+    "name": {
+      "en": "Tudor House",
+      "de": "Tudor House"
+    },
+    "zone": "old-town",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": 5,
+    "image": "/img/photos/tudor-house.webp",
+    "motif": "tudor",
+    "blurb": {
+      "en": "A timber-framed Tudor house and garden on Bugle Street, now a museum.",
+      "de": "Ein Fachwerkhaus mit Garten aus der Tudorzeit in der Bugle Street, heute ein Museum."
+    },
+    "aliases": [
+      "Tudor House",
+      "Tudor House and Garden",
+      "Tudor House & Garden"
+    ],
+    "board": "BRD-TUD-01",
+    "installed": null,
+    "demo": true
+  },
+  {
+    "id": "k7Qx2",
+    "slug": "bargate",
+    "kind": "loop",
+    "name": {
+      "en": "Bargate",
+      "de": "Bargate"
+    },
+    "zone": "old-town",
+    "setting": "outdoor",
+    "collectible": true,
+    "status": "active",
+    "walkBackMin": 12,
+    "image": "/img/photos/bargate-dusk.webp",
+    "motif": "gate",
+    "blurb": {
+      "en": "Built around 1180, the Bargate guarded the city's north entrance for 800 years. Look out for the lead lions, added in the mid 1700s, and the heraldic shields on the north side.",
+      "de": "Um 1180 erbaut, bewachte das Bargate 800 Jahre lang den Nordeingang. Achten Sie auf die Bleilöwen aus der Mitte des 18. Jahrhunderts und die Wappenschilde an der Nordseite."
+    },
+    "aliases": [
+      "Bargate",
+      "The Bargate"
+    ],
+    "board": "BRD-BAR-01",
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "w5Jp3",
+    "slug": "westquay",
+    "kind": "loop",
+    "name": {
+      "en": "WestQuay Esplanade",
+      "de": "WestQuay Esplanade"
+    },
+    "zone": "westquay",
+    "setting": "outdoor",
+    "collectible": true,
+    "status": "active",
+    "walkBackMin": 14,
+    "image": "/img/photos/westquay-watermark-dusk.webp",
+    "motif": "mall",
+    "blurb": {
+      "en": "Step out onto the south esplanade. Showcase Cinema de Lux, more dining, and the famous wall view steps.",
+      "de": "Treten Sie auf die Südesplanade. Showcase Cinema de Lux, Restaurants, berühmte Stufen mit Mauerblick."
+    },
+    "aliases": [
+      "WestQuay",
+      "WestQuay Shopping Centre",
+      "WestQuay Esplanade"
+    ],
+    "board": "BRD-WES-01",
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "x8Fs4",
+    "slug": "oxford-street",
+    "kind": "loop",
+    "name": {
+      "en": "Oxford Street",
+      "de": "Oxford Street"
+    },
+    "zone": "oxford",
+    "setting": "outdoor",
+    "collectible": true,
+    "status": "active",
+    "walkBackMin": 12,
+    "image": "/img/photos/oxford-street.webp",
+    "motif": "street",
+    "blurb": {
+      "en": "Five minutes' walk takes you to Oxford Street, Southampton's outdoor dining boulevard. Pick any table; you can't go wrong.",
+      "de": "Fünf Minuten zu Fuß zur Oxford Street. Southamptons Boulevard zum Draußensitzen."
+    },
+    "aliases": [
+      "Oxford Street"
+    ],
+    "board": "BRD-OXF-01",
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "c1Gv9",
+    "slug": "cultural-quarter",
+    "kind": "loop",
+    "name": {
+      "en": "Cultural Quarter",
+      "de": "Kulturviertel"
+    },
+    "zone": "cultural",
+    "setting": "outdoor",
+    "collectible": true,
+    "status": "active",
+    "walkBackMin": 23,
+    "image": "/img/photos/cultural-quarter.webp",
+    "motif": "square",
+    "blurb": null,
+    "aliases": [
+      "Cultural Quarter",
+      "Guildhall Square",
+      "Guildhall",
+      "John Hansard Gallery"
+    ],
+    "board": "BRD-CUL-01",
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "m3Rt9",
+    "slug": "seacity",
+    "kind": "loop",
+    "name": {
+      "en": "SeaCity Museum",
+      "de": "SeaCity Museum"
+    },
+    "zone": "cultural",
+    "setting": "indoor",
+    "collectible": true,
+    "status": "active",
+    "walkBackMin": 21,
+    "image": "/img/photos/seacity-kids.webp",
+    "motif": "museum",
+    "blurb": {
+      "en": "A short walk west brings you to SeaCity. The permanent Titanic exhibit follows the 549 Southampton crew who never came home.",
+      "de": "Ein kurzer Spaziergang westlich bringt Sie zum SeaCity. Die Dauerausstellung folgt den 549 Southampton-Besatzungsmitgliedern, die nie heimkehrten."
+    },
+    "aliases": [
+      "SeaCity Museum",
+      "SeaCity"
+    ],
+    "board": "BRD-SEA-01",
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "a4Lb6",
+    "slug": "art-gallery",
+    "kind": "loop",
+    "name": {
+      "en": "Southampton City Art Gallery",
+      "de": "Southampton City Art Gallery"
+    },
+    "zone": "cultural",
+    "setting": "indoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": 25,
+    "image": "/img/photos/civic-centre-clock-tower.webp",
+    "motif": "gallery",
+    "blurb": {
+      "en": "The city art gallery, inside the Civic Centre.",
+      "de": "Die städtische Kunstgalerie im Civic Centre."
+    },
+    "aliases": [
+      "Southampton City Art Gallery",
+      "City Art Gallery",
+      "Art Gallery"
+    ],
+    "board": "BRD-ART-01",
+    "installed": null,
+    "demo": true
+  },
+  {
+    "id": "p8Zw1",
+    "slug": "mayflower",
+    "kind": "loop",
+    "name": {
+      "en": "Mayflower Theatre",
+      "de": "Mayflower Theatre"
+    },
+    "zone": "cultural",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": 28,
+    "image": "/img/places/mayflower.svg",
+    "motif": "theatre",
+    "blurb": {
+      "en": "The city's large theatre on Commercial Road.",
+      "de": "Das große Theater der Stadt an der Commercial Road."
+    },
+    "aliases": [
+      "Mayflower Theatre",
+      "The Mayflower Theatre"
+    ],
+    "board": "BRD-MAY-01",
+    "installed": null,
+    "demo": true
+  },
+  {
+    "id": "e2Tk5",
+    "slug": "titanic-memorial",
+    "kind": "loop",
+    "name": {
+      "en": "Titanic Engineers' Memorial",
+      "de": "Titanic Ingenieur-Denkmal"
+    },
+    "zone": "parks",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": 26,
+    "image": "/img/places/titanic-memorial.svg",
+    "motif": "memorial",
+    "blurb": {
+      "en": "Begin between East and West Park, at the top of Above Bar Street. The 1914 memorial honours the 35 engineers who stayed at their posts as RMS Titanic went down on 15 April 1912.",
+      "de": "Beginnen Sie zwischen East und West Park. Das Denkmal von 1914 ehrt die 35 Ingenieure, die an ihren Posten blieben, als die RMS Titanic sank."
+    },
+    "aliases": [
+      "Titanic Engineers' Memorial",
+      "East Park"
+    ],
+    "board": "BRD-TIT-01",
+    "installed": null,
+    "demo": true
+  },
+  {
+    "id": "b7Yd3",
+    "slug": "bedford-place",
+    "kind": "loop",
+    "name": {
+      "en": "Bedford Place",
+      "de": "Bedford Place"
+    },
+    "zone": "bedford",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": 26,
+    "image": "/img/photos/padharo-meal.webp",
+    "motif": "terrace",
+    "blurb": {
+      "en": "Bedford Place is where locals go. Tiny bars, ramen joints, indie wine merchants. Almost no chains.",
+      "de": "In Bedford Place gehen die Einheimischen aus. Kleine Bars, Ramen-Läden, Weinhändler."
+    },
+    "aliases": [
+      "Bedford Place"
+    ],
+    "board": "BRD-BED-01",
+    "installed": null,
+    "demo": true
+  },
+  {
+    "id": "sF3kd",
+    "slug": "snow-snowflake-1",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "The Mayflower Village",
+      "de": "The Mayflower Village"
+    },
+    "zone": "cultural",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "The Mayflower Village"
+    ],
+    "address": "Commercial Road, SO15 1GE",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sN8qw",
+    "slug": "snow-snowflake-2",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Oceana House",
+      "de": "Oceana House"
+    },
+    "zone": "cultural",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Oceana House"
+    ],
+    "address": "Commercial Road, SO15 1GA",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sR2vb",
+    "slug": "snow-snowflake-3",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Premier Inn",
+      "de": "Premier Inn"
+    },
+    "zone": "parks",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Premier Inn"
+    ],
+    "address": "Cumberland Place, SO15 2WY",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sG7lm",
+    "slug": "snow-snowflake-4",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Grosvenor House",
+      "de": "Grosvenor House"
+    },
+    "zone": "bedford",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Grosvenor House"
+    ],
+    "address": "Grosvenor Square, SO15 2BE",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sY4tc",
+    "slug": "snow-snowflake-5",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Ryman Stationery",
+      "de": "Ryman Stationery"
+    },
+    "zone": "bedford",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Ryman Stationery"
+    ],
+    "address": "London Road, SO15 2WW",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sK9pz",
+    "slug": "snow-snowflake-6",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Goadsby Estate Agents",
+      "de": "Goadsby Estate Agents"
+    },
+    "zone": "bedford",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Goadsby Estate Agents"
+    ],
+    "address": "London Road, SO15 2AH",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sB1xh",
+    "slug": "snow-snowflake-7",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Barber Lab & Co",
+      "de": "Barber Lab & Co"
+    },
+    "zone": "bedford",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Barber Lab & Co"
+    ],
+    "address": "London Road, SO15 2AF",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sU6je",
+    "slug": "snow-snowflake-8",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Solent University Sports Complex",
+      "de": "Solent University Sports Complex"
+    },
+    "zone": "parks",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Solent University Sports Complex"
+    ],
+    "address": "East Park Terrace, SO14 0YN",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sJ5ra",
+    "slug": "snow-snowflake-9",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "John Hansard Gallery",
+      "de": "John Hansard Gallery"
+    },
+    "zone": "above-bar",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "John Hansard Gallery"
+    ],
+    "address": "Above Bar Street, SO14 7DU",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sD0wn",
+    "slug": "snow-snowflake-10",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Dice & Dumplings",
+      "de": "Dice & Dumplings"
+    },
+    "zone": "above-bar",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Dice & Dumplings"
+    ],
+    "address": "Above Bar Street, SO14 7DU",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sQ2fy",
+    "slug": "snow-snowflake-11",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "1 Guildhall Square",
+      "de": "1 Guildhall Square"
+    },
+    "zone": "cultural",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "1 Guildhall Square"
+    ],
+    "address": "Guildhall Square, SO14 7FP",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sT4ga",
+    "slug": "snow-star-1",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Kadampa Meditation Centre",
+      "de": "Kadampa Meditation Centre"
+    },
+    "zone": "above-bar",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Kadampa Meditation Centre"
+    ],
+    "address": "Hanover Buildings, SO14 1JU",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sM7ue",
+    "slug": "snow-star-2",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Run Company",
+      "de": "Run Company"
+    },
+    "zone": "above-bar",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Run Company"
+    ],
+    "address": "Hanover Buildings, SO14 1JU",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sX1co",
+    "slug": "snow-star-3",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Metro Bank",
+      "de": "Metro Bank"
+    },
+    "zone": "above-bar",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Metro Bank"
+    ],
+    "address": "Above Bar Street, SO15 1QD",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sC8hi",
+    "slug": "snow-star-4",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Cool! Merch",
+      "de": "Cool! Merch"
+    },
+    "zone": "above-bar",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Cool! Merch"
+    ],
+    "address": "Marlands Shopping Centre, SO14 7SJ",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sL3vs",
+    "slug": "snow-star-5",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "The Marlands (next to One Below)",
+      "de": "The Marlands (next to One Below)"
+    },
+    "zone": "above-bar",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "The Marlands (next to One Below)"
+    ],
+    "address": "Marlands Shopping Centre, SO14 7SJ",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sW6bd",
+    "slug": "snow-star-6",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Amplifon Hearing Centre",
+      "de": "Amplifon Hearing Centre"
+    },
+    "zone": "above-bar",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Amplifon Hearing Centre"
+    ],
+    "address": "Above Bar Street, SO14 7FG",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sP9ek",
+    "slug": "snow-star-7",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Slug & Lettuce",
+      "de": "Slug & Lettuce"
+    },
+    "zone": "above-bar",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Slug & Lettuce"
+    ],
+    "address": "Above Bar Street, SO14 7FG",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sE5qn",
+    "slug": "snow-star-8",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Above Barbers",
+      "de": "Above Barbers"
+    },
+    "zone": "above-bar",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Above Barbers"
+    ],
+    "address": "Above Bar Street, SO14 7FH",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sH2zm",
+    "slug": "snow-star-9",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "Sprinkles Gelato",
+      "de": "Sprinkles Gelato"
+    },
+    "zone": "above-bar",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "Sprinkles Gelato"
+    ],
+    "address": "Above Bar Street, SO14 7DU",
+    "board": null,
+    "installed": null,
+    "demo": false
+  },
+  {
+    "id": "sA7rt",
+    "slug": "snow-star-10",
+    "kind": "snow-window",
+    "campaign": "snow",
+    "name": {
+      "en": "London Camera Exchange",
+      "de": "London Camera Exchange"
+    },
+    "zone": "cultural",
+    "setting": "outdoor",
+    "collectible": false,
+    "status": "active",
+    "walkBackMin": null,
+    "image": "/img/places/snow-window.svg",
+    "motif": "snow",
+    "blurb": null,
+    "aliases": [
+      "London Camera Exchange"
+    ],
+    "address": "Civic Centre Road, SO14 7FJ",
+    "board": null,
+    "installed": null,
+    "demo": false
+  }
+]

@@ -1,0 +1,219 @@
+[
+  {
+    "id": "snow",
+    "trail": "snow",
+    "title": {
+      "en": "Snow Windows Trail",
+      "de": "Schnee-Fenster-Pfad"
+    },
+    "blurb": {
+      "en": "Southampton's streets transformed into a gallery of hand-painted snow window artworks. Two routes, 23 windows, one free prize at SeaCity Museum.",
+      "de": "Die Straßen Southamptons als Galerie handbemalter Schneefenster. Zwei Routen, 23 Fenster, ein kostenloser Preis im SeaCity Museum."
+    },
+    "dates": {
+      "en": "29 November to 4 January · 10am to 5pm",
+      "de": "29. November bis 4. Januar · 10 bis 17 Uhr"
+    },
+    "prizeBlurb": {
+      "en": "Once you've found all the windows on a route, submit your trail to enter the Ultimate Winter Prize draw and claim your free SeaCity Museum gift.",
+      "de": "Wenn Sie alle Fenster einer Route gefunden haben, reichen Sie Ihren Pfad ein."
+    },
+    "heroImage": "/img/photos/snow-windows.webp",
+    "activeFrom": "2026-11-29",
+    "activeTo": "2027-01-04",
+    "codeValidUntil": "2027-01-04",
+    "prizeRetentionDays": 90,
+    "routes": {
+      "snowflake": {
+        "id": "snowflake",
+        "name": {
+          "en": "Snowflake Route",
+          "de": "Schneeflocken-Route"
+        },
+        "icon": "❄",
+        "duration": 40,
+        "distance": 1.6,
+        "distanceUnit": "miles",
+        "codePrefix": "SNOW",
+        "stops": [
+          {
+            "n": 1,
+            "tag": "sF3kd",
+            "name": "The Mayflower Village",
+            "address": "Commercial Road, SO15 1GE",
+            "isFinal": false
+          },
+          {
+            "n": 2,
+            "tag": "sN8qw",
+            "name": "Oceana House",
+            "address": "Commercial Road, SO15 1GA",
+            "isFinal": false
+          },
+          {
+            "n": 3,
+            "tag": "sR2vb",
+            "name": "Premier Inn",
+            "address": "Cumberland Place, SO15 2WY",
+            "isFinal": false
+          },
+          {
+            "n": 4,
+            "tag": "sG7lm",
+            "name": "Grosvenor House",
+            "address": "Grosvenor Square, SO15 2BE",
+            "isFinal": false
+          },
+          {
+            "n": 5,
+            "tag": "sY4tc",
+            "name": "Ryman Stationery",
+            "address": "London Road, SO15 2WW",
+            "isFinal": false
+          },
+          {
+            "n": 6,
+            "tag": "sK9pz",
+            "name": "Goadsby Estate Agents",
+            "address": "London Road, SO15 2AH",
+            "isFinal": false
+          },
+          {
+            "n": 7,
+            "tag": "sB1xh",
+            "name": "Barber Lab & Co",
+            "address": "London Road, SO15 2AF",
+            "isFinal": false
+          },
+          {
+            "n": 8,
+            "tag": "sU6je",
+            "name": "Solent University Sports Complex",
+            "address": "East Park Terrace, SO14 0YN",
+            "isFinal": false
+          },
+          {
+            "n": 9,
+            "tag": "sJ5ra",
+            "name": "John Hansard Gallery",
+            "address": "Above Bar Street, SO14 7DU",
+            "isFinal": false
+          },
+          {
+            "n": 10,
+            "tag": "sD0wn",
+            "name": "Dice & Dumplings",
+            "address": "Above Bar Street, SO14 7DU",
+            "isFinal": false
+          },
+          {
+            "n": 11,
+            "tag": "sQ2fy",
+            "name": "1 Guildhall Square",
+            "address": "Guildhall Square, SO14 7FP",
+            "isFinal": false
+          },
+          {
+            "n": 12,
+            "tag": "m3Rt9",
+            "name": "SeaCity Museum",
+            "address": "Havelock Road, SO14 7FY",
+            "isFinal": true
+          }
+        ]
+      },
+      "star": {
+        "id": "star",
+        "name": {
+          "en": "Star Route",
+          "de": "Stern-Route"
+        },
+        "icon": "✦",
+        "duration": 25,
+        "distance": 0.7,
+        "distanceUnit": "miles",
+        "codePrefix": "STAR",
+        "stops": [
+          {
+            "n": 1,
+            "tag": "sT4ga",
+            "name": "Kadampa Meditation Centre",
+            "address": "Hanover Buildings, SO14 1JU",
+            "isFinal": false
+          },
+          {
+            "n": 2,
+            "tag": "sM7ue",
+            "name": "Run Company",
+            "address": "Hanover Buildings, SO14 1JU",
+            "isFinal": false
+          },
+          {
+            "n": 3,
+            "tag": "sX1co",
+            "name": "Metro Bank",
+            "address": "Above Bar Street, SO15 1QD",
+            "isFinal": false
+          },
+          {
+            "n": 4,
+            "tag": "sC8hi",
+            "name": "Cool! Merch",
+            "address": "Marlands Shopping Centre, SO14 7SJ",
+            "isFinal": false
+          },
+          {
+            "n": 5,
+            "tag": "sL3vs",
+            "name": "The Marlands (next to One Below)",
+            "address": "Marlands Shopping Centre, SO14 7SJ",
+            "isFinal": false
+          },
+          {
+            "n": 6,
+            "tag": "sW6bd",
+            "name": "Amplifon Hearing Centre",
+            "address": "Above Bar Street, SO14 7FG",
+            "isFinal": false
+          },
+          {
+            "n": 7,
+            "tag": "sP9ek",
+            "name": "Slug & Lettuce",
+            "address": "Above Bar Street, SO14 7FG",
+            "isFinal": false
+          },
+          {
+            "n": 8,
+            "tag": "sE5qn",
+            "name": "Above Barbers",
+            "address": "Above Bar Street, SO14 7FH",
+            "isFinal": false
+          },
+          {
+            "n": 9,
+            "tag": "sH2zm",
+            "name": "Sprinkles Gelato",
+            "address": "Above Bar Street, SO14 7DU",
+            "isFinal": false
+          },
+          {
+            "n": 10,
+            "tag": "sA7rt",
+            "name": "London Camera Exchange",
+            "address": "Civic Centre Road, SO14 7FJ",
+            "isFinal": false
+          },
+          {
+            "n": 11,
+            "tag": "m3Rt9",
+            "name": "SeaCity Museum",
+            "address": "Havelock Road, SO14 7FY",
+            "isFinal": true
+          }
+        ]
+      }
+    },
+    "demo": false
+  }
+]

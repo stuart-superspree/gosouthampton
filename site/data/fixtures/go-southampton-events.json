@@ -1,0 +1,11 @@
+{
+  "note": "Demo fixture. Invented events written for the RouteLoop demo, in the shape of a simple JSON feed.",
+  "feed": "City centre events (demo JSON feed)",
+  "events": [
+    { "id": "gs-101", "name": "Late Night Shopping Thursday", "name_de": "Langer Einkaufsdonnerstag", "starts_at": "{{iso:D+1 17:00}}", "ends_at": "{{iso:D+1 20:00}}", "location": "Above Bar Street", "kind": "market", "url": "https://gosouthampton.co.uk/" },
+    { "id": "gs-102", "name": "Guildhall Square Food Market", "name_de": "Lebensmittelmarkt am Guildhall Square", "starts_at": "{{iso:D+2 10:00}}", "ends_at": "{{iso:D+2 16:00}}", "location": "Guildhall Square", "kind": "food", "url": "https://gosouthampton.co.uk/" },
+    { "id": "gs-103", "name": "Evening Jazz on Guildhall Square", "name_de": "Abendjazz am Guildhall Square", "starts_at": "{{iso:D+0 18:30}}", "ends_at": "{{iso:D+0 21:00}}", "location": "Guildhall Square", "kind": "music", "url": "https://gosouthampton.co.uk/" },
+    { "id": "gs-104", "name": "City Centre Treasure Hunt", "name_de": "Schatzsuche in der Innenstadt", "starts_at": "{{iso:D+4 11:00}}", "ends_at": "{{iso:D+4 14:00}}", "location": "Bargate", "kind": "family", "url": "https://gosouthampton.co.uk/" },
+    { "id": "gs-105", "name": "Bedford Place Street Party", "name_de": "Straßenfest am Bedford Place", "starts_at": "{{iso:D+6 16:00}}", "ends_at": "{{iso:D+6 21:00}}", "location": "Bedford Place", "kind": "music", "url": "https://gosouthampton.co.uk/" }
+  ]
+}

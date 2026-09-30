@@ -1,0 +1,50 @@
+[
+  {
+    "id": "n-01",
+    "severity": "closure",
+    "text": {
+      "en": "High Street resurfacing between the Bargate and Holyrood Church (demo). Routes take a short detour via the town walls.",
+      "de": "Straßenarbeiten in der High Street zwischen Bargate und Holyrood Church (Demo). Routen führen mit einem kurzen Umweg über die Stadtmauer."
+    },
+    "zones": [
+      "old-town"
+    ],
+    "closesLegs": [
+      "L019",
+      "L020"
+    ],
+    "start": "{{D-1}}",
+    "end": "{{D+5}}",
+    "demo": true
+  },
+  {
+    "id": "n-02",
+    "severity": "info",
+    "text": {
+      "en": "Evening event on Guildhall Square (demo). Expect more people around the Cultural Quarter after 6pm.",
+      "de": "Abendveranstaltung auf dem Guildhall Square (Demo). Ab 18 Uhr ist rund um das Kulturviertel mehr los."
+    },
+    "zones": [
+      "cultural"
+    ],
+    "closesLegs": [],
+    "start": "{{D+0}}",
+    "end": "{{D+0}}",
+    "demo": true
+  },
+  {
+    "id": "n-03",
+    "severity": "warn",
+    "text": {
+      "en": "Wet weather expected (demo). The stone steps on the town walls can be slippery, so take care or choose step-free routes.",
+      "de": "Regen erwartet (Demo). Die Steinstufen an der Stadtmauer können rutschig sein. Bitte vorsichtig sein oder stufenfreie Wege wählen."
+    },
+    "zones": [
+      "old-town"
+    ],
+    "closesLegs": [],
+    "start": "{{D+2}}",
+    "end": "{{D+4}}",
+    "demo": true
+  }
+]

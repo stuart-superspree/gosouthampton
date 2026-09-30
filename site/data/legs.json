@@ -1,0 +1,1383 @@
+[
+  {
+    "id": "L001",
+    "from": "tR4mQ",
+    "to": "w5Jp3",
+    "walkMin": 13,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "Leave the terminal",
+          "de": "Terminal verlassen"
+        },
+        "text": {
+          "en": "**From the Cruise Terminal:** Walk north on Town Quay Road, keeping the water on your right.",
+          "de": "**Vom Kreuzfahrtterminal:** Gehen Sie auf der Town Quay Road nach Norden, das Wasser zu Ihrer Rechten."
+        },
+        "image": "/img/photos/cruise-terminal-aerial.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      },
+      {
+        "title": {
+          "en": "Cross under the railway",
+          "de": "Unter der Bahnbrücke hindurch"
+        },
+        "text": {
+          "en": "**Cross at the lights** and head under the railway bridge. The medieval walls appear on your right.",
+          "de": "**Überqueren Sie an der Ampel** und gehen Sie unter der Eisenbahnbrücke hindurch. Rechts erscheinen die mittelalterlichen Stadtmauern."
+        },
+        "image": "/img/photos/walls-westquay.webp",
+        "access": {
+          "en": "Level pavement, signal crossing with dropped kerbs.",
+          "de": "Ebener Gehweg, Ampelübergang mit abgesenkten Bordsteinen."
+        }
+      },
+      {
+        "title": {
+          "en": "Along Western Esplanade",
+          "de": "Entlang der Western Esplanade"
+        },
+        "text": {
+          "en": "Follow the walls north along Western Esplanade for 4 minutes. **Keep them on your right.**",
+          "de": "Folgen Sie den Mauern 4 Minuten lang nach Norden entlang der Western Esplanade. **Halten Sie sie zu Ihrer Rechten.**"
+        },
+        "image": "/img/photos/walls-westquay.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      },
+      {
+        "title": {
+          "en": "Turn into WestQuay",
+          "de": "Abbiegen zu WestQuay"
+        },
+        "text": {
+          "en": "At WestQuay Esplanade, **turn right** into the city. The pedestrianised High Street is ahead.",
+          "de": "An der WestQuay Esplanade **biegen Sie rechts ab** in die Stadt. Vor Ihnen liegt die Fußgängerzone High Street."
+        },
+        "image": "/img/photos/westquay-summer.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "WALK_DECKS.cruise-terminal[0..3]",
+    "demo": true
+  },
+  {
+    "id": "L002",
+    "from": "w5Jp3",
+    "to": "k7Qx2",
+    "walkMin": 5,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "Arrive at the Bargate",
+          "de": "Ankunft am Bargate"
+        },
+        "text": {
+          "en": "Continue along High Street for 4 minutes until you see the **medieval Bargate** rising ahead of you. _Tap the Loop on the Bargate to confirm your arrival._",
+          "de": "Gehen Sie 4 Minuten die High Street entlang, bis Sie das **mittelalterliche Bargate** vor sich sehen. _Tippen Sie auf den Loop am Bargate, um Ihre Ankunft zu bestätigen._"
+        },
+        "image": "/img/photos/bargate-dusk.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "WALK_DECKS.cruise-terminal[4]",
+    "demo": true
+  },
+  {
+    "id": "L003",
+    "from": "k7Qx2",
+    "to": "w5Jp3",
+    "walkMin": 5,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "Leave the Bargate",
+          "de": "Bargate verlassen"
+        },
+        "text": {
+          "en": "**From the Bargate:** Head west on Bargate Street.",
+          "de": "**Vom Bargate:** Gehen Sie auf der Bargate Street nach Westen."
+        },
+        "image": "/img/photos/bargate-dusk.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      },
+      {
+        "title": {
+          "en": "WestQuay entrance ahead",
+          "de": "WestQuay-Eingang voraus"
+        },
+        "text": {
+          "en": "You'll see **WestQuay's main entrance** on your left within 200m.",
+          "de": "Sie sehen den **Haupteingang von WestQuay** nach etwa 200 m auf Ihrer Linken."
+        },
+        "image": "/img/photos/westquay-watermark-dusk.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      },
+      {
+        "title": {
+          "en": "Arrive at WestQuay",
+          "de": "Ankunft bei WestQuay"
+        },
+        "text": {
+          "en": "Enter WestQuay. Tap the Loop inside the main concourse.",
+          "de": "Betreten Sie WestQuay. Tippen Sie auf den Loop in der Haupthalle."
+        },
+        "image": "/img/photos/westquay-interior.webp",
+        "access": {
+          "en": "Level entrance with automatic doors.",
+          "de": "Ebenerdiger Eingang mit automatischen Türen."
+        }
+      }
+    ],
+    "source": "WALK_DECKS.bargate",
+    "demo": true
+  },
+  {
+    "id": "L004",
+    "from": "w5Jp3",
+    "to": "tR4mQ",
+    "walkMin": 14,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "Exit WestQuay south",
+          "de": "WestQuay nach Süden verlassen"
+        },
+        "text": {
+          "en": "Esplanade, towards the walls",
+          "de": "Zur Esplanade, in Richtung Stadtmauern"
+        },
+        "image": "/img/photos/westquay-summer.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      },
+      {
+        "title": {
+          "en": "Along Western Esplanade",
+          "de": "Entlang der Western Esplanade"
+        },
+        "text": {
+          "en": "Keep the walls on your left",
+          "de": "Die Mauern zu Ihrer Linken"
+        },
+        "image": "/img/photos/walls-westquay.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      },
+      {
+        "title": {
+          "en": "Under the railway",
+          "de": "Unter der Bahnbrücke hindurch"
+        },
+        "text": {
+          "en": "And onto Town Quay Road",
+          "de": "Und weiter auf die Town Quay Road"
+        },
+        "image": "/img/photos/walls-watermark.webp",
+        "access": {
+          "en": "Level pavement, signal crossing with dropped kerbs.",
+          "de": "Ebener Gehweg, Ampelübergang mit abgesenkten Bordsteinen."
+        }
+      },
+      {
+        "title": {
+          "en": "Cruise Terminal",
+          "de": "Kreuzfahrtterminal"
+        },
+        "text": {
+          "en": "Tap your Loop at the gate",
+          "de": "Tippen Sie am Tor auf Ihren Loop"
+        },
+        "image": "/img/photos/cruise-terminal-aerial.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "RETURN_DECKS.westquay",
+    "demo": true
+  },
+  {
+    "id": "L005",
+    "from": "tR4mQ",
+    "to": "u6Hy1",
+    "walkMin": 5,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "Cross Town Quay Road",
+          "de": "Town Quay Road überqueren"
+        },
+        "text": {
+          "en": "Leave the terminal and cross Town Quay Road at the lights.",
+          "de": "Verlassen Sie das Terminal und überqueren Sie die Town Quay Road an der Ampel."
+        },
+        "image": "/img/photos/cruise-terminal-aerial.webp",
+        "access": {
+          "en": "Level pavement, signal crossing with dropped kerbs.",
+          "de": "Ebener Gehweg, Ampelübergang mit abgesenkten Bordsteinen."
+        }
+      },
+      {
+        "title": {
+          "en": "Up Bugle Street",
+          "de": "Die Bugle Street hinauf"
+        },
+        "text": {
+          "en": "Head up Bugle Street. Tudor House is on your left.",
+          "de": "Gehen Sie die Bugle Street hinauf. Das Tudor House liegt zu Ihrer Linken."
+        },
+        "image": "/img/photos/walls-lane-bugle-street.webp",
+        "access": {
+          "en": "Uneven stone paving in places.",
+          "de": "Stellenweise unebenes Steinpflaster."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L006",
+    "from": "u6Hy1",
+    "to": "tR4mQ",
+    "walkMin": 5,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "Onto Town Quay",
+          "de": "Auf den Town Quay"
+        },
+        "text": {
+          "en": "Cross at the lights",
+          "de": "An der Ampel überqueren"
+        },
+        "image": "/img/photos/cruise-terminal-aerial.webp",
+        "access": {
+          "en": "Level pavement, signal crossing with dropped kerbs.",
+          "de": "Ebener Gehweg, Ampelübergang mit abgesenkten Bordsteinen."
+        }
+      },
+      {
+        "title": {
+          "en": "Cruise Terminal",
+          "de": "Kreuzfahrtterminal"
+        },
+        "text": {
+          "en": "Loop your arrival tag at the gate",
+          "de": "Tippen Sie am Tor auf den Ankunfts-Loop"
+        },
+        "image": "/img/photos/cruise-terminal-aerial.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "RETURN_DECKS.old-town[1..2]",
+    "demo": true
+  },
+  {
+    "id": "L007",
+    "from": "q2Ez7",
+    "to": "u6Hy1",
+    "walkMin": 3,
+    "stepFree": false,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "Down Bugle Street",
+          "de": "Die Bugle Street hinunter"
+        },
+        "text": {
+          "en": "Past Tudor House on your right",
+          "de": "Am Tudor House vorbei, zu Ihrer Rechten"
+        },
+        "image": "/img/photos/walls-lane-bugle-street.webp",
+        "access": {
+          "en": "Steps down from the town walls. The step-free way round is via the Bargate.",
+          "de": "Stufen von der Stadtmauer hinunter. Der stufenfreie Weg führt über das Bargate."
+        }
+      }
+    ],
+    "source": "RETURN_DECKS.old-town[0]",
+    "demo": true
+  },
+  {
+    "id": "L008",
+    "from": "u6Hy1",
+    "to": "q2Ez7",
+    "walkMin": 3,
+    "stepFree": false,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "Up to the walls",
+          "de": "Hinauf zur Stadtmauer"
+        },
+        "text": {
+          "en": "Walk north along Bugle Street towards the town walls, then take the steps up to Western Esplanade.",
+          "de": "Gehen Sie die Bugle Street nach Norden in Richtung Stadtmauer und nehmen Sie dann die Stufen hinauf zur Western Esplanade."
+        },
+        "image": "/img/photos/walls-lane-bugle-street.webp",
+        "access": {
+          "en": "Steps up to the town walls. The step-free way round is via the Bargate.",
+          "de": "Stufen hinauf zur Stadtmauer. Der stufenfreie Weg führt über das Bargate."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L009",
+    "from": "q2Ez7",
+    "to": "k7Qx2",
+    "walkMin": 4,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "Back to the Bargate",
+          "de": "Zurück zum Bargate"
+        },
+        "text": {
+          "en": "Walk back along the walls to the Bargate. Look for the tall stone gatehouse.",
+          "de": "Gehen Sie an der Mauer entlang zurück zum Bargate. Achten Sie auf das hohe steinerne Torhaus."
+        },
+        "image": "/img/photos/bargate-dusk.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L010",
+    "from": "k7Qx2",
+    "to": "q2Ez7",
+    "walkMin": 4,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "**From the Bargate,** head west along Bargate Street to the town walls.",
+          "de": "**Vom Bargate** auf der Bargate Street nach Westen bis zur Stadtmauer."
+        },
+        "image": "/img/photos/walls-watermark.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "TOURS.history.stops[3].direction",
+    "demo": true
+  },
+  {
+    "id": "L011",
+    "from": "q2Ez7",
+    "to": "h3Nc8",
+    "walkMin": 5,
+    "stepFree": false,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "**Continue down** the High Street. The roofless church is on your left.",
+          "de": "**Weiter** die High Street hinunter. Die dachlose Kirche liegt links."
+        },
+        "image": "/img/photos/victorian-street.webp",
+        "access": {
+          "en": "A short flight of steps where the walls meet the High Street. Step-free mode goes round via the Bargate.",
+          "de": "Einige Stufen, wo die Mauer auf die High Street trifft. Der stufenfreie Modus führt über das Bargate."
+        }
+      }
+    ],
+    "source": "TOURS.history.stops[4].direction",
+    "demo": true
+  },
+  {
+    "id": "L012",
+    "from": "h3Nc8",
+    "to": "q2Ez7",
+    "walkMin": 5,
+    "stepFree": false,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Walk back up the High Street and turn left towards the town walls.",
+          "de": "Gehen Sie die High Street zurück hinauf und biegen Sie links in Richtung Stadtmauer ab."
+        },
+        "image": "/img/photos/walls-watermark.webp",
+        "access": {
+          "en": "A short flight of steps up to the walls.",
+          "de": "Einige Stufen hinauf zur Stadtmauer."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L013",
+    "from": "h3Nc8",
+    "to": "d9Wv2",
+    "walkMin": 4,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "**Keep walking south** until you hit the waterfront. The Dancing Man has the green sign.",
+          "de": "**Weiter südwärts** bis zum Wasser. Grünes Schild."
+        },
+        "image": "/img/photos/dancing-man.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "TOURS.history.stops[5].direction",
+    "demo": true
+  },
+  {
+    "id": "L014",
+    "from": "d9Wv2",
+    "to": "h3Nc8",
+    "walkMin": 4,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Walk north up the High Street from the waterfront. Holyrood Church is on your right.",
+          "de": "Gehen Sie vom Wasser die High Street nach Norden hinauf. Die Holyrood Church liegt zu Ihrer Rechten."
+        },
+        "image": "/img/places/holyrood.svg",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L015",
+    "from": "d9Wv2",
+    "to": "tR4mQ",
+    "walkMin": 6,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "Step out onto Town Quay",
+          "de": "Hinaus auf den Town Quay"
+        },
+        "text": {
+          "en": "You're already at the waterfront",
+          "de": "Sie sind schon am Wasser"
+        },
+        "image": "/img/photos/whirlwind-tour.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      },
+      {
+        "title": {
+          "en": "West along Town Quay",
+          "de": "Westwärts am Town Quay entlang"
+        },
+        "text": {
+          "en": "300m past the ferry terminal",
+          "de": "300 m am Fährterminal vorbei"
+        },
+        "image": "/img/photos/whirlwind-tour.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      },
+      {
+        "title": {
+          "en": "Cruise Terminal",
+          "de": "Kreuzfahrtterminal"
+        },
+        "text": {
+          "en": "Tap your Loop at the gate",
+          "de": "Tippen Sie am Tor auf Ihren Loop"
+        },
+        "image": "/img/photos/cruise-terminal-aerial.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "RETURN_DECKS.dancing-man",
+    "demo": true
+  },
+  {
+    "id": "L016",
+    "from": "tR4mQ",
+    "to": "d9Wv2",
+    "walkMin": 6,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "East along Town Quay",
+          "de": "Ostwärts am Town Quay entlang"
+        },
+        "text": {
+          "en": "Leave the terminal and walk east along Town Quay, past the ferry terminal.",
+          "de": "Verlassen Sie das Terminal und gehen Sie am Town Quay entlang nach Osten, am Fährterminal vorbei."
+        },
+        "image": "/img/photos/whirlwind-tour.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      },
+      {
+        "title": {
+          "en": "Arrive at the Dancing Man",
+          "de": "Ankunft am Dancing Man"
+        },
+        "text": {
+          "en": "The Dancing Man is the stone building with the green sign.",
+          "de": "Das Dancing Man ist das Steingebäude mit dem grünen Schild."
+        },
+        "image": "/img/photos/dancing-man.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L017",
+    "from": "h3Nc8",
+    "to": "tR4mQ",
+    "walkMin": 9,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "Across Town Quay",
+          "de": "Über den Town Quay"
+        },
+        "text": {
+          "en": "Cross at the lights, terminal signposted",
+          "de": "An der Ampel überqueren, Terminal ist ausgeschildert"
+        },
+        "image": "/img/photos/cruise-terminal-aerial.webp",
+        "access": {
+          "en": "Level pavement, signal crossing with dropped kerbs.",
+          "de": "Ebener Gehweg, Ampelübergang mit abgesenkten Bordsteinen."
+        }
+      },
+      {
+        "title": {
+          "en": "Cruise Terminal",
+          "de": "Kreuzfahrtterminal"
+        },
+        "text": {
+          "en": "Loop the arrival tag at the gate",
+          "de": "Tippen Sie am Tor auf den Ankunfts-Loop"
+        },
+        "image": "/img/photos/cruise-terminal-aerial.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "RETURN_DECKS.bargate[2..3]",
+    "demo": true
+  },
+  {
+    "id": "L018",
+    "from": "tR4mQ",
+    "to": "h3Nc8",
+    "walkMin": 9,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "Across Town Quay",
+          "de": "Über den Town Quay"
+        },
+        "text": {
+          "en": "Leave the terminal and cross Town Quay at the lights.",
+          "de": "Verlassen Sie das Terminal und überqueren Sie den Town Quay an der Ampel."
+        },
+        "image": "/img/photos/cruise-terminal-aerial.webp",
+        "access": {
+          "en": "Level pavement, signal crossing with dropped kerbs.",
+          "de": "Ebener Gehweg, Ampelübergang mit abgesenkten Bordsteinen."
+        }
+      },
+      {
+        "title": {
+          "en": "Up the High Street",
+          "de": "Die High Street hinauf"
+        },
+        "text": {
+          "en": "Walk up the High Street. Holyrood Church is on your right.",
+          "de": "Gehen Sie die High Street hinauf. Die Holyrood Church liegt zu Ihrer Rechten."
+        },
+        "image": "/img/photos/victorian-street.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L019",
+    "from": "k7Qx2",
+    "to": "h3Nc8",
+    "walkMin": 6,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "Through the Bargate arch",
+          "de": "Durch den Bargate-Bogen"
+        },
+        "text": {
+          "en": "Head south on the High Street",
+          "de": "Auf der High Street nach Süden"
+        },
+        "image": "/img/photos/victorian-street.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      },
+      {
+        "title": {
+          "en": "Past Holyrood Church",
+          "de": "An der Holyrood Church vorbei"
+        },
+        "text": {
+          "en": "Roofless ruin on your left",
+          "de": "Dachlose Ruine zu Ihrer Linken"
+        },
+        "image": "/img/places/holyrood.svg",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "RETURN_DECKS.bargate[0..1]",
+    "demo": true
+  },
+  {
+    "id": "L020",
+    "from": "h3Nc8",
+    "to": "k7Qx2",
+    "walkMin": 6,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Walk north up the High Street. The Bargate is straight ahead.",
+          "de": "Gehen Sie die High Street nach Norden hinauf. Das Bargate liegt direkt vor Ihnen."
+        },
+        "image": "/img/photos/victorian-street.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L021",
+    "from": "x8Fs4",
+    "to": "h3Nc8",
+    "walkMin": 3,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "West along Oxford Street",
+          "de": "Westwärts die Oxford Street entlang"
+        },
+        "text": {
+          "en": "Then along Bernard Street to the High Street",
+          "de": "Dann die Bernard Street entlang bis zur High Street"
+        },
+        "image": "/img/photos/oxford-street.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      },
+      {
+        "title": {
+          "en": "South past Holyrood Church",
+          "de": "Südwärts an der Holyrood Church vorbei"
+        },
+        "text": {
+          "en": "Roofless ruin on your left",
+          "de": "Dachlose Ruine zu Ihrer Linken"
+        },
+        "image": "/img/places/holyrood.svg",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "RETURN_DECKS.oxford-street[0..1]",
+    "demo": true
+  },
+  {
+    "id": "L022",
+    "from": "h3Nc8",
+    "to": "x8Fs4",
+    "walkMin": 3,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Walk east along Bernard Street to the Orchard Lane crossing, where Oxford Street begins.",
+          "de": "Gehen Sie die Bernard Street nach Osten bis zur Kreuzung mit der Orchard Lane, wo die Oxford Street beginnt."
+        },
+        "image": "/img/photos/oxford-street.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L023",
+    "from": "m3Rt9",
+    "to": "k7Qx2",
+    "walkMin": 9,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "title": {
+          "en": "South across the Civic Centre",
+          "de": "Südwärts über das Civic Centre"
+        },
+        "text": {
+          "en": "Past the Guildhall on your left",
+          "de": "An der Guildhall vorbei, zu Ihrer Linken"
+        },
+        "image": "/img/photos/cultural-quarter.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      },
+      {
+        "text": {
+          "en": "**Walk south** down Above Bar Street. The Bargate sits at the foot.",
+          "de": "**Südwärts** die Above Bar Street hinunter."
+        },
+        "image": "/img/photos/bargate-dusk.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "RETURN_DECKS.seacity[0] + TOURS.history.stops[2].direction",
+    "demo": true
+  },
+  {
+    "id": "L024",
+    "from": "k7Qx2",
+    "to": "m3Rt9",
+    "walkMin": 9,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Walk north up Above Bar Street to Guildhall Square.",
+          "de": "Gehen Sie die Above Bar Street nach Norden hinauf bis zum Guildhall Square."
+        },
+        "image": "/img/photos/cultural-quarter.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      },
+      {
+        "text": {
+          "en": "SeaCity Museum sits beside the Guildhall.",
+          "de": "Das SeaCity Museum steht neben der Guildhall."
+        },
+        "image": "/img/photos/seacity-kids.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L025",
+    "from": "c1Gv9",
+    "to": "m3Rt9",
+    "walkMin": 2,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Cross Guildhall Square. SeaCity sits beside the Guildhall.",
+          "de": "Überqueren Sie den Guildhall Square. SeaCity steht neben der Guildhall."
+        },
+        "image": "/img/photos/seacity-kids.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L026",
+    "from": "m3Rt9",
+    "to": "c1Gv9",
+    "walkMin": 2,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Step out into Guildhall Square, the heart of the Cultural Quarter.",
+          "de": "Treten Sie hinaus auf den Guildhall Square, das Herz des Kulturviertels."
+        },
+        "image": "/img/photos/cultural-quarter.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L027",
+    "from": "e2Tk5",
+    "to": "m3Rt9",
+    "walkMin": 5,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "**Head west** across the Civic Centre forecourt. SeaCity sits beside the Guildhall.",
+          "de": "**Westwärts gehen** über den Vorplatz des Civic Centre. SeaCity steht neben der Guildhall."
+        },
+        "image": "/img/photos/seacity-kids.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "TOURS.history.stops[1].direction",
+    "demo": true
+  },
+  {
+    "id": "L028",
+    "from": "m3Rt9",
+    "to": "e2Tk5",
+    "walkMin": 5,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Walk east across the Civic Centre forecourt to East Park. The memorial stands at the top of Above Bar Street.",
+          "de": "Gehen Sie ostwärts über den Vorplatz des Civic Centre zum East Park. Das Denkmal steht am oberen Ende der Above Bar Street."
+        },
+        "image": "/img/places/titanic-memorial.svg",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L029",
+    "from": "e2Tk5",
+    "to": "c1Gv9",
+    "walkMin": 4,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Walk down Above Bar Street to Guildhall Square.",
+          "de": "Gehen Sie die Above Bar Street hinunter zum Guildhall Square."
+        },
+        "image": "/img/photos/cultural-quarter.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L030",
+    "from": "c1Gv9",
+    "to": "e2Tk5",
+    "walkMin": 4,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Walk up Above Bar Street towards the parks. The memorial is on your right in East Park.",
+          "de": "Gehen Sie die Above Bar Street hinauf in Richtung der Parks. Das Denkmal steht rechts im East Park."
+        },
+        "image": "/img/places/titanic-memorial.svg",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L031",
+    "from": "c1Gv9",
+    "to": "a4Lb6",
+    "walkMin": 2,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "The Art Gallery entrance is on the Civic Centre side of the square.",
+          "de": "Der Eingang der Kunstgalerie liegt auf der Seite des Civic Centre."
+        },
+        "image": "/img/photos/civic-centre-clock-tower.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L032",
+    "from": "a4Lb6",
+    "to": "c1Gv9",
+    "walkMin": 2,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Step back out into Guildhall Square.",
+          "de": "Treten Sie zurück auf den Guildhall Square."
+        },
+        "image": "/img/photos/cultural-quarter.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L033",
+    "from": "a4Lb6",
+    "to": "p8Zw1",
+    "walkMin": 3,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Walk west along Commercial Road to the Mayflower Theatre.",
+          "de": "Gehen Sie die Commercial Road nach Westen bis zum Mayflower Theatre."
+        },
+        "image": "/img/places/mayflower.svg",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L034",
+    "from": "p8Zw1",
+    "to": "a4Lb6",
+    "walkMin": 3,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Walk east along Commercial Road to the Civic Centre.",
+          "de": "Gehen Sie die Commercial Road nach Osten bis zum Civic Centre."
+        },
+        "image": "/img/photos/civic-centre-clock-tower.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L035",
+    "from": "p8Zw1",
+    "to": "b7Yd3",
+    "walkMin": 7,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Follow the signs north to Bedford Place.",
+          "de": "Folgen Sie den Schildern nach Norden zum Bedford Place."
+        },
+        "image": "/img/photos/padharo-meal.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L036",
+    "from": "b7Yd3",
+    "to": "p8Zw1",
+    "walkMin": 7,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "Follow the signs south to Commercial Road and the Mayflower Theatre.",
+          "de": "Folgen Sie den Schildern nach Süden zur Commercial Road und zum Mayflower Theatre."
+        },
+        "image": "/img/places/mayflower.svg",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "new",
+    "demo": true
+  },
+  {
+    "id": "L037",
+    "from": "c1Gv9",
+    "to": "x8Fs4",
+    "walkMin": 12,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "**Walk south** down Above Bar, past the Bargate. At Holyrood Church turn left into Bernard Street, then follow it to Oxford Street.",
+          "de": "**Südwärts** die Above Bar entlang, am Bargate vorbei. An der Holyrood Church links in die Bernard Street, dann weiter bis zur Oxford Street."
+        },
+        "image": "/img/photos/oxford-street.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "TOURS.food.stops[1].direction",
+    "demo": true
+  },
+  {
+    "id": "L038",
+    "from": "x8Fs4",
+    "to": "b7Yd3",
+    "walkMin": 15,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "**Head north** up Above Bar, then bear left at Devonshire Road.",
+          "de": "**Nordwärts** die Above Bar hinauf, dann links in die Devonshire Road."
+        },
+        "image": "/img/photos/padharo-meal.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "TOURS.food.stops[2].direction",
+    "demo": true
+  },
+  {
+    "id": "L039",
+    "from": "b7Yd3",
+    "to": "w5Jp3",
+    "walkMin": 12,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "**Walk back south** through WestQuay's main mall. The south esplanade exit overlooks the walls.",
+          "de": "**Südwärts zurück** durch WestQuay-Hauptzentrum."
+        },
+        "image": "/img/photos/westquay-watermark-dusk.webp",
+        "access": {
+          "en": "Lifts inside WestQuay between floors.",
+          "de": "Aufzüge innerhalb von WestQuay zwischen den Etagen."
+        }
+      }
+    ],
+    "source": "TOURS.food.stops[3].direction",
+    "demo": true
+  },
+  {
+    "id": "L040",
+    "from": "w5Jp3",
+    "to": "d9Wv2",
+    "walkMin": 9,
+    "stepFree": true,
+    "closed": false,
+    "verifiedOn": null,
+    "verifiedBy": "Not yet walked (demo)",
+    "reviewBy": "2027-03-31",
+    "steps": [
+      {
+        "text": {
+          "en": "**Walk south to the waterfront.** Green sign on the stone building.",
+          "de": "**Südwärts zum Hafen.** Grünes Schild am Steingebäude."
+        },
+        "image": "/img/photos/dancing-man.webp",
+        "access": {
+          "en": "Level pavement.",
+          "de": "Ebener Gehweg."
+        }
+      }
+    ],
+    "source": "TOURS.food.stops[4].direction",
+    "demo": true
+  }
+]

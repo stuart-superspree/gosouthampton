@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>RouteLoop demo admin</title>
+  <link rel="icon" href="/img/icons/icon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/styles/admin.css" />
+  <script type="module" src="/src/admin/admin.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#adminMain">Skip to content</a>
+  <header class="a-header">
+    <div class="a-brand">
+      <span class="a-logo">RouteLoop</span>
+      <span class="a-sub">Southampton city centre · content admin</span>
+    </div>
+    <div class="a-banner" role="note"><strong>Demo admin</strong> · <span class="sim">Simulation</span> No real login. Changes are saved in this browser only and reach the visitor app open in this same browser.</div>
+    <label class="a-role">Signed in as <select id="roleSelect" aria-label="Demo role">
+      <option value="admin">BID admin</option>
+      <option value="author">Author</option>
+      <option value="reviewer">Reviewer</option>
+      <option value="council">Council viewer</option>
+    </select></label>
+  </header>
+  <nav class="a-nav" aria-label="Admin sections">
+    <a href="#dashboard" data-nav="dashboard">Dashboard</a>
+    <a href="#tags" data-nav="tags">Tag registry</a>
+    <a href="#trails" data-nav="trails">Trail builder</a>
+    <a href="#legs" data-nav="legs">Leg editor</a>
+    <a href="#sources" data-nav="sources">Sources</a>
+    <a href="#content" data-nav="content">Events and notices</a>
+    <a href="#publish" data-nav="publish">Publish <span class="a-dirty hidden" id="dirtyDot">unpublished changes</span></a>
+    <a href="#audit" data-nav="audit">Audit log</a>
+    <a href="/?demo=1" class="a-nav-app">Open visitor app ↗</a>
+  </nav>
+  <main id="adminMain" class="a-main" tabindex="-1"></main>
+  <div class="a-toast" id="aToast" role="status" aria-live="polite"></div>
+  <div class="a-tip hidden" id="chartTip" role="tooltip"></div>
+</body>
+</html>

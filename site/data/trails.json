@@ -1,0 +1,364 @@
+[
+  {
+    "id": "history",
+    "type": "trail",
+    "theme": {
+      "en": "History",
+      "de": "Geschichte"
+    },
+    "title": {
+      "en": "Titanic to Tudor",
+      "de": "Von der Titanic zum Tudor-Haus"
+    },
+    "blurb": {
+      "en": "From the engineers who died with the Titanic to the medieval gateway that's stood for 800 years. A stroll through Southampton's story.",
+      "de": "Von den Ingenieuren, die mit der Titanic starben, bis zum mittelalterlichen Tor, das seit 800 Jahren steht."
+    },
+    "legs": [
+      "L027",
+      "L023",
+      "L010",
+      "L011",
+      "L013"
+    ],
+    "startText": {
+      "en": "**Start here.** Take a moment with the bronze plaque, then continue south down Above Bar Street.",
+      "de": "**Hier starten.** Verweilen Sie kurz, dann südlich die Above Bar Street hinunter."
+    },
+    "stops": {
+      "e2Tk5": {
+        "title": {
+          "en": "Titanic Engineers' Memorial",
+          "de": "Titanic Ingenieur-Denkmal"
+        },
+        "sub": {
+          "en": "Above Bar Street · East Park",
+          "de": "Above Bar Street · East Park"
+        },
+        "copy": {
+          "en": "Begin between East and West Park, at the top of Above Bar Street. The 1914 memorial honours the 35 engineers who stayed at their posts as RMS Titanic went down on 15 April 1912.",
+          "de": "Beginnen Sie zwischen East und West Park. Das Denkmal von 1914 ehrt die 35 Ingenieure, die an ihren Posten blieben, als die RMS Titanic sank."
+        }
+      },
+      "m3Rt9": {
+        "title": {
+          "en": "SeaCity Museum",
+          "de": "SeaCity Museum"
+        },
+        "sub": {
+          "en": "Civic Centre · Titanic story",
+          "de": "Civic Centre · Titanic-Geschichte"
+        },
+        "copy": {
+          "en": "A short walk west brings you to SeaCity. The permanent Titanic exhibit follows the 549 Southampton crew who never came home.",
+          "de": "Ein kurzer Spaziergang westlich bringt Sie zum SeaCity. Die Dauerausstellung folgt den 549 Southampton-Besatzungsmitgliedern, die nie heimkehrten."
+        }
+      },
+      "k7Qx2": {
+        "title": {
+          "en": "The Bargate",
+          "de": "Das Bargate"
+        },
+        "sub": {
+          "en": "Medieval north gate",
+          "de": "Mittelalterliches Nordtor"
+        },
+        "copy": {
+          "en": "Built around 1180, the Bargate guarded the city's north entrance for 800 years. Look out for the lead lions, added in the mid 1700s, and the heraldic shields on the north side.",
+          "de": "Um 1180 erbaut, bewachte das Bargate 800 Jahre lang den Nordeingang. Achten Sie auf die Bleilöwen aus der Mitte des 18. Jahrhunderts und die Wappenschilde an der Nordseite."
+        }
+      },
+      "q2Ez7": {
+        "title": {
+          "en": "Town Walls",
+          "de": "Stadtmauern"
+        },
+        "sub": {
+          "en": "Western Esplanade",
+          "de": "Western Esplanade"
+        },
+        "copy": {
+          "en": "Some of England's best preserved medieval walls.",
+          "de": "Einige der besterhaltenen Mauern Englands."
+        },
+        "image": "/img/photos/walls-westquay.webp"
+      },
+      "h3Nc8": {
+        "title": {
+          "en": "Holyrood Church",
+          "de": "Holyrood Church"
+        },
+        "sub": {
+          "en": "Sailors' memorial",
+          "de": "Seemannsgedenkstätte"
+        },
+        "copy": {
+          "en": "Bombed in 1940 and left as a ruin in memory of those lost at sea. Memorials mark the Titanic crew and the merchant navy, and outside stands an anchor from the QE2.",
+          "de": "1940 zerbombt und als Ruine zum Gedenken belassen. Gedenkstätten erinnern an die Titanic-Crew und die Handelsmarine, und vor der Kirche steht ein Anker der QE2."
+        }
+      },
+      "d9Wv2": {
+        "title": {
+          "en": "Dancing Man Brewery",
+          "de": "Dancing Man Brewery"
+        },
+        "sub": {
+          "en": "14th century woolhouse · waterfront pub",
+          "de": "Wollhalle aus dem 14. Jahrhundert"
+        },
+        "copy": {
+          "en": "End at the Dancing Man, a 14th century wool warehouse, now an award winning brewpub on the water. A pint here is the way to finish.",
+          "de": "Abschluss im Dancing Man, einem Wolllager aus dem 14. Jahrhundert, heute preisgekrönter Brauereipub am Wasser."
+        }
+      }
+    },
+    "heroImage": "/img/photos/bargate.webp",
+    "walkMin": 75,
+    "km": 2.3,
+    "activeFrom": null,
+    "activeTo": null,
+    "sponsor": null,
+    "seasonal": false,
+    "demo": false
+  },
+  {
+    "id": "food",
+    "type": "trail",
+    "theme": {
+      "en": "Food & Drink",
+      "de": "Essen & Trinken"
+    },
+    "title": {
+      "en": "A Cruiser's Foodie Trail",
+      "de": "Eine kulinarische Tour"
+    },
+    "blurb": {
+      "en": "Coffee on Above Bar, lunch on Oxford Street, and a 14th century pint by the water. Five stops, five flavours of Southampton.",
+      "de": "Kaffee an der Above Bar, Mittagessen in der Oxford Street und ein Pint aus dem 14. Jahrhundert am Wasser."
+    },
+    "legs": [
+      "L037",
+      "L038",
+      "L039",
+      "L040"
+    ],
+    "startText": {
+      "en": "**Start on Above Bar Street.** Mettricks faces Guildhall Square. Dark green frontage.",
+      "de": "**Beginn auf der Above Bar Street.** Mettricks liegt am Guildhall Square."
+    },
+    "stops": {
+      "c1Gv9": {
+        "title": {
+          "en": "Mettricks Guildhall",
+          "de": "Mettricks Guildhall"
+        },
+        "sub": {
+          "en": "Speciality coffee · Above Bar",
+          "de": "Spezialitätenkaffee · Above Bar"
+        },
+        "copy": {
+          "en": "Start with Southampton's beloved third wave coffee house. Single origin beans, knowledgeable baristas, and a window onto Guildhall Square.",
+          "de": "Beginnen Sie mit Southamptons beliebtem Third Wave-Café."
+        },
+        "image": "/img/photos/mettricks-coffee.webp"
+      },
+      "x8Fs4": {
+        "title": {
+          "en": "Oxford Street al fresco",
+          "de": "Oxford Street unter freiem Himmel"
+        },
+        "sub": {
+          "en": "Cafe quarter · pavement tables",
+          "de": "Caféviertel · Tische im Freien"
+        },
+        "copy": {
+          "en": "Five minutes' walk takes you to Oxford Street, Southampton's outdoor dining boulevard. Pick any table; you can't go wrong.",
+          "de": "Fünf Minuten zu Fuß zur Oxford Street. Southamptons Boulevard zum Draußensitzen."
+        }
+      },
+      "b7Yd3": {
+        "title": {
+          "en": "Bedford Place",
+          "de": "Bedford Place"
+        },
+        "sub": {
+          "en": "Independent bars & bistros",
+          "de": "Unabhängige Bars & Bistros"
+        },
+        "copy": {
+          "en": "Bedford Place is where locals go. Tiny bars, ramen joints, indie wine merchants. Almost no chains.",
+          "de": "In Bedford Place gehen die Einheimischen aus. Kleine Bars, Ramen-Läden, Weinhändler."
+        }
+      },
+      "w5Jp3": {
+        "title": {
+          "en": "WestQuay South",
+          "de": "WestQuay Süd"
+        },
+        "sub": {
+          "en": "Waterside dining",
+          "de": "Essen am Wasser"
+        },
+        "copy": {
+          "en": "WestQuay's south end has waterside terraces with views to the medieval walls. Zizzi, The Real Greek, and newer independents.",
+          "de": "Das Südende von WestQuay hat Wasserterrassen mit Blick auf die Stadtmauern. Zizzi, The Real Greek."
+        },
+        "image": "/img/photos/westquay-summer.webp"
+      },
+      "d9Wv2": {
+        "title": {
+          "en": "Dancing Man Brewery",
+          "de": "Dancing Man Brewery"
+        },
+        "sub": {
+          "en": "A 14th century pint by the water",
+          "de": "Ein Pint aus dem 14. Jahrhundert am Wasser"
+        },
+        "copy": {
+          "en": "Finish at the Dancing Man, a brewpub in a 14th century wool warehouse. The house pale ale is the move.",
+          "de": "Abschluss im Dancing Man, Brauereipub aus dem 14. Jahrhundert. Das Hauspale Ale ist die Empfehlung."
+        }
+      }
+    },
+    "heroImage": "/img/photos/mettricks-coffee.webp",
+    "walkMin": 90,
+    "km": 1.8,
+    "activeFrom": null,
+    "activeTo": null,
+    "sponsor": null,
+    "seasonal": false,
+    "demo": true
+  },
+  {
+    "id": "quiet",
+    "type": "trail",
+    "theme": {
+      "en": "Parks & culture",
+      "de": "Parks & Kultur"
+    },
+    "title": {
+      "en": "The Quiet Quarter",
+      "de": "Das ruhige Viertel"
+    },
+    "blurb": {
+      "en": "A calmer walk through East Park and the Cultural Quarter, away from the busiest streets. A good choice on busy ship days.",
+      "de": "Ein ruhigerer Spaziergang durch den East Park und das Kulturviertel, abseits der belebtesten Straßen. Eine gute Wahl an vollen Schiffstagen."
+    },
+    "legs": [
+      "L029",
+      "L031",
+      "L033",
+      "L035"
+    ],
+    "startText": {
+      "en": "**Start in East Park** by the memorial, then walk down to Guildhall Square.",
+      "de": "**Beginnen Sie im East Park** am Denkmal und gehen Sie dann hinunter zum Guildhall Square."
+    },
+    "stops": {
+      "e2Tk5": {
+        "title": {
+          "en": "Titanic Engineers' Memorial",
+          "de": "Titanic Ingenieur-Denkmal"
+        },
+        "sub": {
+          "en": "East Park · a calm start",
+          "de": "East Park · ein ruhiger Start"
+        },
+        "copy": {
+          "en": "Start among the trees of East Park, by the memorial to the Titanic engineers.",
+          "de": "Beginnen Sie zwischen den Bäumen des East Park, am Denkmal für die Titanic-Ingenieure."
+        }
+      },
+      "c1Gv9": {
+        "title": {
+          "en": "Guildhall Square",
+          "de": "Guildhall Square"
+        },
+        "sub": {
+          "en": "Cultural Quarter",
+          "de": "Kulturviertel"
+        },
+        "copy": {
+          "en": "The open square at the heart of the Cultural Quarter. Take a seat and look around.",
+          "de": "Der offene Platz im Herzen des Kulturviertels. Setzen Sie sich und schauen Sie sich um."
+        }
+      },
+      "a4Lb6": {
+        "title": {
+          "en": "Southampton City Art Gallery",
+          "de": "Southampton City Art Gallery"
+        },
+        "sub": {
+          "en": "Civic Centre",
+          "de": "Civic Centre"
+        },
+        "copy": {
+          "en": "Step inside the Civic Centre for the city art gallery.",
+          "de": "Im Civic Centre finden Sie die städtische Kunstgalerie."
+        }
+      },
+      "p8Zw1": {
+        "title": {
+          "en": "Mayflower Theatre",
+          "de": "Mayflower Theatre"
+        },
+        "sub": {
+          "en": "Commercial Road",
+          "de": "Commercial Road"
+        },
+        "copy": {
+          "en": "The city's large theatre. Check what's on for tonight.",
+          "de": "Das große Theater der Stadt. Schauen Sie, was heute Abend läuft."
+        }
+      },
+      "b7Yd3": {
+        "title": {
+          "en": "Bedford Place",
+          "de": "Bedford Place"
+        },
+        "sub": {
+          "en": "Independent bars & bistros",
+          "de": "Unabhängige Bars & Bistros"
+        },
+        "copy": {
+          "en": "Bedford Place is where locals go. Tiny bars, ramen joints, indie wine merchants. Almost no chains.",
+          "de": "In Bedford Place gehen die Einheimischen aus. Kleine Bars, Ramen-Läden, Weinhändler."
+        }
+      }
+    },
+    "heroImage": "/img/photos/civic-centre-clock-tower.webp",
+    "walkMin": 45,
+    "km": 1.3,
+    "activeFrom": null,
+    "activeTo": null,
+    "sponsor": null,
+    "seasonal": false,
+    "demo": true
+  },
+  {
+    "id": "snow",
+    "type": "campaign",
+    "campaign": "snow",
+    "theme": {
+      "en": "Seasonal · Nov to Jan",
+      "de": "Saisonal · Nov bis Jan"
+    },
+    "title": {
+      "en": "Snow Windows Trail",
+      "de": "Schnee-Fenster-Pfad"
+    },
+    "blurb": {
+      "en": "Two routes, 23 hand-painted windows, one free prize at SeaCity Museum.",
+      "de": "Zwei Routen, 23 handbemalte Fenster, ein kostenloser Preis im SeaCity Museum."
+    },
+    "legs": [],
+    "heroImage": "/img/photos/snow-windows.webp",
+    "walkMin": 65,
+    "km": 3.7,
+    "activeFrom": "2026-11-29",
+    "activeTo": "2027-01-04",
+    "sponsor": null,
+    "seasonal": true,
+    "demo": false
+  }
+]

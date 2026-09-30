@@ -1,0 +1,56 @@
+[
+  {
+    "id": "b-01",
+    "label": {
+      "en": "Multi-ship day (demo)",
+      "de": "Tag mit mehreren Schiffen (Demo)"
+    },
+    "date": "{{D+0}}",
+    "busyZones": [
+      "old-town",
+      "westquay"
+    ],
+    "suggestTrail": "quiet",
+    "reason": {
+      "en": "The Old Town is busy today. This route is quieter.",
+      "de": "In der Altstadt ist heute viel los. Diese Route ist ruhiger."
+    },
+    "demo": true
+  },
+  {
+    "id": "b-02",
+    "label": {
+      "en": "Waterfront festival (demo)",
+      "de": "Hafenfest (Demo)"
+    },
+    "date": "{{D+4}}",
+    "busyZones": [
+      "waterfront",
+      "port"
+    ],
+    "suggestTrail": "quiet",
+    "reason": {
+      "en": "The waterfront is busy today. This route is quieter.",
+      "de": "Am Hafen ist heute viel los. Diese Route ist ruhiger."
+    },
+    "demo": true
+  },
+  {
+    "id": "b-03",
+    "label": {
+      "en": "Late night shopping (demo)",
+      "de": "Langer Einkaufsabend (Demo)"
+    },
+    "date": "{{D+9}}",
+    "busyZones": [
+      "above-bar",
+      "westquay"
+    ],
+    "suggestTrail": "history",
+    "reason": {
+      "en": "The shopping streets are busy today. This trail spends more time in quieter spots.",
+      "de": "In den Einkaufsstraßen ist heute viel los. Dieser Pfad führt öfter an ruhigere Orte."
+    },
+    "demo": true
+  }
+]

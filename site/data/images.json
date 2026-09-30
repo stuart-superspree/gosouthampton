@@ -1,0 +1,350 @@
+[
+  {
+    "id": "hero-welcome",
+    "file": "/img/photos/hero-welcome.webp",
+    "alt": {
+      "en": "A cruise ship at sea near Southampton",
+      "de": "Ein Kreuzfahrtschiff vor Southampton"
+    },
+    "source": "Visit Southampton image library (Simpleview), as used in prototype v1.0.5",
+    "credit": "Solent Sky Services",
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "cruise-terminal",
+    "file": "/img/photos/cruise-terminal.webp",
+    "alt": {
+      "en": "A cruise ship arriving in Southampton",
+      "de": "Ein Kreuzfahrtschiff läuft in Southampton ein"
+    },
+    "source": "Visit Southampton image library (Simpleview), as used in prototype v1.0.5",
+    "credit": "Solent Sky Services",
+    "licence": "to-confirm",
+    "note": "Not used on a screen at present; kept for the hero crop."
+  },
+  {
+    "id": "cruise-terminal-aerial",
+    "file": "/img/photos/cruise-terminal-aerial.webp",
+    "alt": {
+      "en": "A cruise ship berthed at a Southampton cruise terminal, seen from the air",
+      "de": "Ein Kreuzfahrtschiff am Terminal in Southampton aus der Luft"
+    },
+    "source": "Supplied by Superspree for this demo, 30 Sep 2026",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "whirlwind-tour",
+    "file": "/img/photos/whirlwind-tour.webp",
+    "alt": {
+      "en": "Historic buildings on Town Quay",
+      "de": "Historische Gebäude am Town Quay"
+    },
+    "source": "Visit Southampton image library (Simpleview), as used in prototype v1.0.5",
+    "credit": "Ryan Stanikk",
+    "licence": "to-confirm",
+    "note": "The prototype used this for the Titanic Engineers' Memorial, but it shows Town Quay, so it is used for Town Quay steps and the walk-in card."
+  },
+  {
+    "id": "bargate",
+    "file": "/img/photos/bargate.webp",
+    "alt": {
+      "en": "The Bargate by day",
+      "de": "Das Bargate bei Tag"
+    },
+    "source": "Visit Southampton image library (Simpleview), as used in prototype v1.0.5",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "bargate-dusk",
+    "file": "/img/photos/bargate-dusk.webp",
+    "alt": {
+      "en": "The Bargate at dusk",
+      "de": "Das Bargate in der Abenddämmerung"
+    },
+    "source": "Supplied by Superspree for this demo, 30 Sep 2026",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "walls-westquay",
+    "file": "/img/photos/walls-westquay.webp",
+    "alt": {
+      "en": "The medieval town walls beside WestQuay at dusk",
+      "de": "Die mittelalterliche Stadtmauer neben WestQuay in der Dämmerung"
+    },
+    "source": "Visit Southampton image library (Simpleview), as used in prototype v1.0.5",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "walls-watermark",
+    "file": "/img/photos/walls-watermark.webp",
+    "alt": {
+      "en": "The town walls next to the WestQuay Watermark",
+      "de": "Die Stadtmauer neben dem WestQuay Watermark"
+    },
+    "source": "Supplied by Superspree for this demo, 30 Sep 2026",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "walls-lane-bugle-street",
+    "file": "/img/photos/walls-lane-bugle-street.webp",
+    "alt": {
+      "en": "A lane beside the old town walls near Bugle Street",
+      "de": "Eine Gasse an der alten Stadtmauer nahe der Bugle Street"
+    },
+    "source": "Supplied by Superspree for this demo, 30 Sep 2026",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "westquay-summer",
+    "file": "/img/photos/westquay-summer.webp",
+    "alt": {
+      "en": "WestQuay Watermark terraces in summer",
+      "de": "Die Terrassen des WestQuay Watermark im Sommer"
+    },
+    "source": "Visit Southampton image library (Simpleview), as used in prototype v1.0.5",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "westquay-watermark-dusk",
+    "file": "/img/photos/westquay-watermark-dusk.webp",
+    "alt": {
+      "en": "WestQuay Watermark lit up at dusk",
+      "de": "Das beleuchtete WestQuay Watermark in der Dämmerung"
+    },
+    "source": "Supplied by Superspree for this demo, 30 Sep 2026",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "westquay-interior",
+    "file": "/img/photos/westquay-interior.webp",
+    "alt": {
+      "en": "Inside WestQuay shopping centre",
+      "de": "Im Einkaufszentrum WestQuay"
+    },
+    "source": "Supplied by Superspree for this demo, 30 Sep 2026",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "cultural-quarter",
+    "file": "/img/photos/cultural-quarter.webp",
+    "alt": {
+      "en": "Buildings in the Cultural Quarter at night",
+      "de": "Gebäude im Kulturviertel bei Nacht"
+    },
+    "source": "Visit Southampton image library (Simpleview), as used in prototype v1.0.5",
+    "credit": "Dan Wilson",
+    "licence": "to-confirm",
+    "note": "The prototype also used this for Holyrood Church; it shows the Cultural Quarter, so Holyrood now uses a drawn placeholder."
+  },
+  {
+    "id": "civic-centre-clock-tower",
+    "file": "/img/photos/civic-centre-clock-tower.webp",
+    "alt": {
+      "en": "The Civic Centre clock tower from the air",
+      "de": "Der Uhrturm des Civic Centre aus der Luft"
+    },
+    "source": "Supplied by Superspree for this demo, 30 Sep 2026",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": "Looks like a stock library preview (612 px wide). Confirm the licence before any public use."
+  },
+  {
+    "id": "seacity-kids",
+    "file": "/img/photos/seacity-kids.webp",
+    "alt": {
+      "en": "A family exploring a gallery at SeaCity Museum",
+      "de": "Eine Familie in einer Ausstellung im SeaCity Museum"
+    },
+    "source": "Visit Southampton image library (Simpleview), as used in prototype v1.0.5",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "tudor-house",
+    "file": "/img/photos/tudor-house.webp",
+    "alt": {
+      "en": "The timber-framed front of Tudor House",
+      "de": "Die Fachwerkfassade des Tudor House"
+    },
+    "source": "Supplied by Superspree for this demo, 30 Sep 2026",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "dancing-man",
+    "file": "/img/photos/dancing-man.webp",
+    "alt": {
+      "en": "The Dancing Man Brewery in the medieval Wool House",
+      "de": "Die Dancing Man Brewery im mittelalterlichen Wool House"
+    },
+    "source": "Visit Southampton image library (Simpleview), as used in prototype v1.0.5",
+    "credit": "KLC Studios",
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "oxford-street",
+    "file": "/img/photos/oxford-street.webp",
+    "alt": {
+      "en": "Friends at an outdoor table on Oxford Street",
+      "de": "Freunde an einem Tisch im Freien in der Oxford Street"
+    },
+    "source": "Visit Southampton image library (Simpleview), as used in prototype v1.0.5",
+    "credit": "Dan Wilson",
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "mettricks-coffee",
+    "file": "/img/photos/mettricks-coffee.webp",
+    "alt": {
+      "en": "Coffee at Mettricks",
+      "de": "Kaffee bei Mettricks"
+    },
+    "source": "Visit Southampton image library (Simpleview), as used in prototype v1.0.5",
+    "credit": "Ryan Stanikk",
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "padharo-meal",
+    "file": "/img/photos/padharo-meal.webp",
+    "alt": {
+      "en": "A family sharing a meal",
+      "de": "Eine Familie beim gemeinsamen Essen"
+    },
+    "source": "Visit Southampton image library (Simpleview), as used in prototype v1.0.5",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "snow-windows",
+    "file": "/img/photos/snow-windows.webp",
+    "alt": {
+      "en": "A hand-painted snow window with a rabbit",
+      "de": "Ein handbemaltes Schneefenster mit einem Hasen"
+    },
+    "source": "Visit Southampton image library (Simpleview), as used in prototype v1.0.5",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "ocean-village-harbour",
+    "file": "/img/photos/ocean-village-harbour.webp",
+    "alt": {
+      "en": "Ocean Village marina at dusk",
+      "de": "Der Yachthafen Ocean Village in der Dämmerung"
+    },
+    "source": "Supplied by Superspree for this demo, 30 Sep 2026",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "ocean-village-aerial",
+    "file": "/img/photos/ocean-village-aerial.webp",
+    "alt": {
+      "en": "Ocean Village and Southampton Water from the air",
+      "de": "Ocean Village und Southampton Water aus der Luft"
+    },
+    "source": "Supplied by Superspree for this demo, 30 Sep 2026",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "stadium-aerial",
+    "file": "/img/photos/stadium-aerial.webp",
+    "alt": {
+      "en": "St Mary's Stadium and the River Itchen from the air",
+      "de": "St Mary's Stadium und der Fluss Itchen aus der Luft"
+    },
+    "source": "Supplied by Superspree for this demo, 30 Sep 2026",
+    "credit": null,
+    "licence": "to-confirm",
+    "note": null
+  },
+  {
+    "id": "victorian-street",
+    "file": "/img/photos/victorian-street.webp",
+    "alt": {
+      "en": "Victorian buildings on the High Street, including Holyrood Chambers",
+      "de": "Viktorianische Gebäude in der High Street, darunter Holyrood Chambers"
+    },
+    "source": "Supplied by Superspree for this demo, 30 Sep 2026",
+    "credit": "Leonid Andronov (from embedded metadata)",
+    "licence": "to-confirm",
+    "note": "iStock image (612 px preview). High Street near the Bargate, confirmed by Stu. Used on High Street step cards, not as the Holyrood Church photo."
+  },
+  {
+    "id": "placeholder-holyrood",
+    "file": "/img/places/holyrood.svg",
+    "alt": {
+      "en": "Drawing of a ruined church with a tall tower",
+      "de": "Zeichnung einer Kirchenruine mit hohem Turm"
+    },
+    "source": "Drawn placeholder (Superspree), used where no cleared photo was supplied",
+    "credit": null,
+    "licence": "own",
+    "note": null
+  },
+  {
+    "id": "placeholder-mayflower",
+    "file": "/img/places/mayflower.svg",
+    "alt": {
+      "en": "Drawing of a theatre front with a lit sign",
+      "de": "Zeichnung einer Theaterfassade mit Leuchtschild"
+    },
+    "source": "Drawn placeholder (Superspree), used where no cleared photo was supplied",
+    "credit": null,
+    "licence": "own",
+    "note": null
+  },
+  {
+    "id": "placeholder-titanic-memorial",
+    "file": "/img/places/titanic-memorial.svg",
+    "alt": {
+      "en": "Drawing of a stone memorial among park trees",
+      "de": "Zeichnung eines Steindenkmals zwischen Parkbäumen"
+    },
+    "source": "Drawn placeholder (Superspree), used where no cleared photo was supplied",
+    "credit": null,
+    "licence": "own",
+    "note": null
+  },
+  {
+    "id": "placeholder-snow-window",
+    "file": "/img/places/snow-window.svg",
+    "alt": {
+      "en": "Drawing of a shop window painted with a snowflake",
+      "de": "Zeichnung eines Schaufensters mit gemalter Schneeflocke"
+    },
+    "source": "Drawn placeholder (Superspree), used where no cleared photo was supplied",
+    "credit": null,
+    "licence": "own",
+    "note": null
+  }
+]

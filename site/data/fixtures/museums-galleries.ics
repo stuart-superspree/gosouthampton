@@ -1,0 +1,61 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Superspree//RouteLoop demo fixture//EN
+X-WR-CALNAME:Southampton museums and galleries (demo feed)
+X-WR-TIMEZONE:Europe/London
+COMMENT:Demo fixture. Invented events written for the RouteLoop demo.
+BEGIN:VEVENT
+UID:mg-001@routeloop-demo.invalid
+DTSTART;TZID=Europe/London:{{ics:D+0 14:00}}
+DTEND;TZID=Europe/London:{{ics:D+0 15:00}}
+SUMMARY:Titanic Crew Stories Talk
+LOCATION:SeaCity Museum\, Havelock Road
+CATEGORIES:Talk
+URL:https://seacitymuseum.co.uk/
+END:VEVENT
+BEGIN:VEVENT
+UID:mg-002@routeloop-demo.invalid
+DTSTART;TZID=Europe/London:{{ics:D-3 10:00}}
+DTEND;TZID=Europe/London:{{ics:D+4 16:00}}
+SUMMARY:Family Trail: Find the Ship's Cat
+LOCATION:SeaCity Museum
+CATEGORIES:Family
+URL:https://seacitymuseum.co.uk/
+END:VEVENT
+BEGIN:VEVENT
+UID:mg-003@routeloop-demo.invalid
+DTSTART;TZID=Europe/London:{{ics:D+1 13:00}}
+DTEND;TZID=Europe/London:{{ics:D+1 13:45}}
+SUMMARY:Curator's Lunchtime Talk
+LOCATION:Southampton City Art Gallery
+CATEGORIES:Talk
+URL:https://southamptoncityartgallery.com/events/
+END:VEVENT
+BEGIN:VEVENT
+UID:mg-004@routeloop-demo.invalid
+DTSTART;TZID=Europe/London:{{ics:D+2 14:00}}
+DTEND;TZID=Europe/London:{{ics:D+2 15:00}}
+SUMMARY:Tudor Kitchen Garden Tour
+LOCATION:Tudor House and Garden
+CATEGORIES:Tour
+URL:https://tudorhouseandgarden.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:mg-005@routeloop-demo.invalid
+DTSTART;TZID=Europe/London:{{ics:D+3 18:00}}
+DTEND;TZID=Europe/London:{{ics:D+3 20:00}}
+SUMMARY:Tudor House After Hours
+LOCATION:Tudor House and Garden
+CATEGORIES:Talk
+URL:https://tudorhouseandgarden.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:mg-006@routeloop-demo.invalid
+DTSTART;TZID=Europe/London:{{ics:D+6 10:00}}
+DTEND;TZID=Europe/London:{{ics:D+6 16:00}}
+SUMMARY:Model Ship Weekend
+LOCATION:SeaCity Museum
+CATEGORIES:Exhibition
+URL:https://seacitymuseum.co.uk/
+END:VEVENT
+END:VCALENDAR

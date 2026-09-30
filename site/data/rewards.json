@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tier1",
+    "threshold": 3,
+    "icon": "🍺",
+    "title": {
+      "en": "A pint at Dancing Man Brewery",
+      "de": "Ein Pint im Dancing Man Brewery"
+    },
+    "sub": {
+      "en": "10% off any draught beer or house ale.",
+      "de": "10% auf alle Biere vom Fass."
+    },
+    "partner": {
+      "en": "Dancing Man Brewery · Town Quay",
+      "de": "Dancing Man Brewery · Town Quay"
+    },
+    "instructions": {
+      "en": "Show this code to staff at the bar. Valid today only.",
+      "de": "Zeigen Sie diesen Code dem Personal an der Bar. Nur heute gültig."
+    },
+    "codePrefix": "PINT",
+    "validity": "end-of-day",
+    "demo": true
+  },
+  {
+    "id": "tier2",
+    "threshold": 5,
+    "icon": "☕",
+    "title": {
+      "en": "Coffee on us at Mettricks Guildhall",
+      "de": "Kaffee bei Mettricks Guildhall"
+    },
+    "sub": {
+      "en": "A free filter coffee or English breakfast tea.",
+      "de": "Ein kostenloser Filterkaffee oder Schwarztee."
+    },
+    "partner": {
+      "en": "Mettricks · Above Bar Street",
+      "de": "Mettricks · Above Bar Street"
+    },
+    "instructions": {
+      "en": "Show this code to the barista. Valid today only.",
+      "de": "Zeigen Sie diesen Code dem Barista. Nur heute gültig."
+    },
+    "codePrefix": "BREW",
+    "validity": "end-of-day",
+    "demo": true
+  },
+  {
+    "id": "tier3",
+    "threshold": 8,
+    "icon": "🌟",
+    "title": {
+      "en": "Your Southampton Explorer postcard",
+      "de": "Ihre Southampton Explorer Postkarte"
+    },
+    "sub": {
+      "en": "A shareable digital postcard of your day. A keepsake for the journey home.",
+      "de": "Eine teilbare digitale Postkarte Ihres Tages. Ein Andenken für die Heimreise."
+    },
+    "partner": {
+      "en": "Visit Southampton",
+      "de": "Visit Southampton"
+    },
+    "instructions": {
+      "en": "Save this code, then visit visitsouthampton.co.uk/explorer to claim your postcard.",
+      "de": "Speichern Sie diesen Code, dann visitsouthampton.co.uk/explorer besuchen."
+    },
+    "codePrefix": "EXPLO",
+    "validity": "end-of-day",
+    "demo": true
+  }
+]

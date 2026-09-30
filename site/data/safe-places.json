@@ -1,0 +1,58 @@
+[
+  {
+    "id": "sp-westquay",
+    "name": {
+      "en": "WestQuay customer services",
+      "de": "WestQuay Kundenservice"
+    },
+    "detail": {
+      "en": "Ground floor, central concourse. Staffed throughout shopping hours.",
+      "de": "Erdgeschoss, zentrale Halle. Während der Öffnungszeiten besetzt."
+    },
+    "confirmedWithOwner": false,
+    "reviewBy": "2027-01-31",
+    "demo": false
+  },
+  {
+    "id": "sp-mettricks",
+    "name": {
+      "en": "Mettricks Guildhall",
+      "de": "Mettricks Guildhall"
+    },
+    "detail": {
+      "en": "Above Bar Street. Friendly café staff, busy throughout the day.",
+      "de": "Above Bar Street. Freundliches Café-Personal, ganztägig belebt."
+    },
+    "confirmedWithOwner": false,
+    "reviewBy": "2027-01-31",
+    "demo": false
+  },
+  {
+    "id": "sp-seacity",
+    "name": {
+      "en": "SeaCity Museum reception",
+      "de": "SeaCity Museum Empfang"
+    },
+    "detail": {
+      "en": "Civic Centre. Open daily. Free WiFi inside.",
+      "de": "Civic Centre. Täglich geöffnet. Kostenloses WLAN."
+    },
+    "confirmedWithOwner": false,
+    "reviewBy": "2027-01-31",
+    "demo": false
+  },
+  {
+    "id": "sp-dancing-man",
+    "name": {
+      "en": "Dancing Man Brewery",
+      "de": "Dancing Man Brewery"
+    },
+    "detail": {
+      "en": "14th century woolhouse on Town Quay. Award winning pub with attentive staff.",
+      "de": "Wollhalle aus dem 14. Jahrhundert am Town Quay. Preisgekrönter Pub."
+    },
+    "confirmedWithOwner": false,
+    "reviewBy": "2027-01-31",
+    "demo": false
+  }
+]
